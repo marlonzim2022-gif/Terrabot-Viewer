@@ -1,32 +1,31 @@
 [
   {
     "id": "v5",
-    "label": "V5 — Obstáculos variados",
+    "label": "V5 — Treinamento visual",
     "metrics": {
-      "Cenário original": 0,
-      "Cenários inéditos": 0.22,
-      "Tentativas sem sucesso em cenários inéditos": 0.78
+      "Cenário original": 0.0,
+      "Cenários inéditos": 0.22
     },
     "replays": [
       {
-        "file": "trained.gif",
+        "file": "v5_original.gif",
         "label": "Cenário original",
-        "description": "Obstáculo na posição fixa; esta tentativa terminou em colisão."
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
       },
       {
-        "file": "trained_seen_layout.gif",
+        "file": "v5_treino.gif",
         "label": "Cenário de treinamento",
-        "description": "Posição de obstáculo vista durante o treinamento."
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
       },
       {
-        "file": "trained_unseen_layout.gif",
+        "file": "v5_inedito_1.gif",
         "label": "Cenário inédito 1",
-        "description": "Posição de obstáculo reservada para avaliação."
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
       },
       {
-        "file": "trained_unseen_layout_2.gif",
+        "file": "v5_inedito_2.gif",
         "label": "Cenário inédito 2",
-        "description": "Outra posição de obstáculo reservada para avaliação."
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
       }
     ]
   }
