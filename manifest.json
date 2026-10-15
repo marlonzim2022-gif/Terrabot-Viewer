@@ -2,7 +2,7 @@
   {
     "id":"v5",
     "label":"V5 — Obstáculos variados",
-    "metrics":{"Cenário original":0,"Cenários inéditos":0.22,"Colisões em cenários inéditos":0.78},
+    "metrics":{"Cenário original":0,"Cenários inéditos":0.22,"Tentativas sem sucesso em cenários inéditos":0.78},
     "replays":[
       {"file":"v5_original.gif","label":"Cenário original","description":"Obstáculo na posição fixa; esta tentativa terminou em colisão."},
       {"file":"v5_treino.gif","label":"Cenário de treinamento","description":"Posição de obstáculo vista durante o treinamento."},
