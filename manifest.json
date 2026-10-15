@@ -1,5 +1,35 @@
 [
   {
+    "id": "v6",
+    "label": "V6 — Treinamento visual",
+    "metrics": {
+      "Cenário original": 1.0,
+      "Cenários inéditos": 0.0
+    },
+    "replays": [
+      {
+        "file": "v6_original.gif",
+        "label": "Cenário original",
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
+      },
+      {
+        "file": "v6_treino.gif",
+        "label": "Cenário de treinamento",
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
+      },
+      {
+        "file": "v6_inedito_1.gif",
+        "label": "Cenário inédito 1",
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
+      },
+      {
+        "file": "v6_inedito_2.gif",
+        "label": "Cenário inédito 2",
+        "description": "Gravação demonstrativa no simulador visual PixelWorld, não no Terraria Mobile."
+      }
+    ]
+  },
+  {
     "id": "v5",
     "label": "V5 — Treinamento visual",
     "metrics": {
