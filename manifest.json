@@ -1,5 +1,126 @@
 [
   {
+    "id": "world-signed-rgb-38867237788",
+    "label": "Nível 2 — Diferença visual vs quadros RGB",
+    "metrics": {
+      "Original (24 mundos)": 0.4583333333333333,
+      "Imagem duplicada (24 mundos)": 0.4166666666666667,
+      "Anterior + atual (24 mundos)": 0.2916666666666667,
+      "Diferença RGB + atual (24 mundos)": 0.3333333333333333
+    },
+    "evaluation_note": "Avaliação congelada em 24 mundos, contato físico real com a bandeira. Vídeos representam exemplos selecionados, não todas as tentativas. A diferença RGB ainda não superou a rede original.",
+    "replays": [
+      {
+        "file": "signed_rgb_38867237788_duplicate_current_1_game-3005bb4a6f3d8523.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Quadro atual repetido: tocou bandeira",
+        "description": "Simulador Terrabot Nível 2, semente 89002. Contato verdadeiro na bandeira, avaliação congelada. Na visão da IA a área esquerda representa os pixels adicionais (diferença, anterior ou atual) e a área direita a imagem atual.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "signed_rgb_38867237788_duplicate_current_1_game-3005bb4a6f3d8523.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "signed_rgb_38867237788_duplicate_current_1-b19f2155840b3954.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "signed_rgb_38867237788_duplicate_current_0_game-4b54c497a38b39ea.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Quadro atual repetido: não tocou",
+        "description": "Simulador Terrabot Nível 2, semente 89001. Contato verdadeiro na bandeira, avaliação congelada. Na visão da IA a área esquerda representa os pixels adicionais (diferença, anterior ou atual) e a área direita a imagem atual.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "signed_rgb_38867237788_duplicate_current_0_game-4b54c497a38b39ea.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "signed_rgb_38867237788_duplicate_current_0-c5018b906983f6ae.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "signed_rgb_38867237788_previous_current_1_game-e4b25628b8a3eff5.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Quadro anterior + atual: tocou bandeira",
+        "description": "Simulador Terrabot Nível 2, semente 89002. Contato verdadeiro na bandeira, avaliação congelada. Na visão da IA a área esquerda representa os pixels adicionais (diferença, anterior ou atual) e a área direita a imagem atual.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "signed_rgb_38867237788_previous_current_1_game-e4b25628b8a3eff5.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "signed_rgb_38867237788_previous_current_1-772b3583eb66e8eb.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "signed_rgb_38867237788_previous_current_0_game-71400bae7cecf1bf.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Quadro anterior + atual: não tocou",
+        "description": "Simulador Terrabot Nível 2, semente 89001. Contato verdadeiro na bandeira, avaliação congelada. Na visão da IA a área esquerda representa os pixels adicionais (diferença, anterior ou atual) e a área direita a imagem atual.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "signed_rgb_38867237788_previous_current_0_game-71400bae7cecf1bf.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "signed_rgb_38867237788_previous_current_0-1f9a71047790628e.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "signed_rgb_38867237788_signed_difference_current_1_game-330b80fb87733c56.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Diferença RGB + atual: tocou bandeira",
+        "description": "Simulador Terrabot Nível 2, semente 89002. Contato verdadeiro na bandeira, avaliação congelada. Na visão da IA a área esquerda representa os pixels adicionais (diferença, anterior ou atual) e a área direita a imagem atual.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "signed_rgb_38867237788_signed_difference_current_1_game-330b80fb87733c56.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "signed_rgb_38867237788_signed_difference_current_1-a7e407ef0858eed1.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "signed_rgb_38867237788_signed_difference_current_0_game-509661fb8c02bec4.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Diferença RGB + atual: não tocou",
+        "description": "Simulador Terrabot Nível 2, semente 89001. Contato verdadeiro na bandeira, avaliação congelada. Na visão da IA a área esquerda representa os pixels adicionais (diferença, anterior ou atual) e a área direita a imagem atual.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "signed_rgb_38867237788_signed_difference_current_0_game-509661fb8c02bec4.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "signed_rgb_38867237788_signed_difference_current_0-f2da46cee28e9421.gif.b64"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "world-pixel-pair-38864206091",
     "label": "Nível 2 — Memória visual de dois quadros",
     "metrics": {
