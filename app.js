@@ -74,9 +74,18 @@ async function renderReplay() {
       // GitHub text-only uploads are used to deliver safe, approved GIF bytes
       // without exposing model checkpoints or requiring a private account.
       if (!mediaFile.endsWith(".gif.b64")) throw Error("Expected GIF base64 file");
-      const response = await fetch(url, {cache: "no-store"});
-      if (!response.ok) throw Error("GIF base64 missing");
-      const encoded = (await response.text()).replace(/\s+/g, "");
+      // Large, approved GIFs can be split into base64 chunks to stay within
+      // the GitHub text-file upload limit. Chunks are rejoined before decode.
+      const mediaParts = Array.isArray(selectedView?.parts) ? selectedView.parts : [mediaFile];
+      if (mediaParts.length < 1 || mediaParts.length > 4 ||
+          !mediaParts.every(part => /^[a-zA-Z0-9][a-zA-Z0-9_.-]*$/.test(part))) {
+        throw Error("Invalid replay chunk manifest");
+      }
+      const responses = await Promise.all(mediaParts.map(part =>
+        fetch("media/" + encodeURIComponent(part), {cache: "no-store"})));
+      if (responses.some(response => !response.ok)) throw Error("GIF base64 missing");
+      const encoded = (await Promise.all(responses.map(response => response.text())))
+        .join("").replace(/\s+/g, "");
       if (!encoded || encoded.length > 5000000 ||
           !/^[A-Za-z0-9+/]+={0,2}$/.test(encoded)) {
         throw Error("Invalid GIF base64");
