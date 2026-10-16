@@ -1,5 +1,34 @@
 [
   {
+    "id": "world-l1-frozen",
+    "label": "Training World — Nivel 1 (movimento)",
+    "metrics": {
+      "IA visual (24 mundos)": 1,
+      "Sempre-direita (24 mundos)": 1
+    },
+    "evaluation_note": "Taxas de 24 mundos novos, modelo congelado. Neste nivel simples, a regra sempre-direita tambem venceu todos.",
+    "replays": [
+      {
+        "file": "world_level1_movement_game.gif.b64",
+        "encoding": "base64-gif",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visao do jogo",
+            "file": "world_level1_movement_game.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visao da IA",
+            "file": "world_level1_movement.gif.b64"
+          }
+        ],
+        "label": "IA aprendida — movimento",
+        "description": "CNN Double DQN do nivel 1, sem treinamento durante a gravacao. Semente 20001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+      }
+    ]
+  },
+  {
     "id": "world-l2-frozen",
     "label": "Training World — Nivel 2 (saltos)",
     "metrics": {
@@ -12,85 +41,60 @@
       {
         "file": "world_level2_original_success_game.gif.b64",
         "encoding": "base64-gif",
-        "label": "Pesos originais — sucesso",
-        "description": "Rede do nivel 1 aplicada ao desafio de saltos. Semente 41001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
         "views": [
           {
             "id": "game",
-            "label": "Visão do jogo",
+            "label": "Visao do jogo",
             "file": "world_level2_original_success_game.gif.b64"
           },
           {
             "id": "ai",
-            "label": "Visão da IA",
+            "label": "Visao da IA",
             "file": "world_level2_original_success.gif.b64"
           }
-        ]
+        ],
+        "label": "Pesos originais — sucesso",
+        "description": "Rede do nivel 1 aplicada ao desafio de saltos. Semente 41001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
       },
       {
         "file": "world_level2_conservative_success_game.gif.b64",
         "encoding": "base64-gif",
-        "label": "Adaptacao conservadora — sucesso",
-        "description": "Rede com ajuste conservador para o nivel 2. Semente 41003: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
         "views": [
           {
             "id": "game",
-            "label": "Visão do jogo",
+            "label": "Visao do jogo",
             "file": "world_level2_conservative_success_game.gif.b64"
           },
           {
             "id": "ai",
-            "label": "Visão da IA",
+            "label": "Visao da IA",
             "file": "world_level2_conservative_success.gif.b64"
           }
-        ]
+        ],
+        "label": "Adaptacao conservadora — sucesso",
+        "description": "Rede com ajuste conservador para o nivel 2. Semente 41003: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
       },
       {
         "file": "world_level2_conservative_failure_game.gif.b64",
         "encoding": "base64-gif",
-        "label": "Adaptacao conservadora — falha",
-        "description": "Exemplo de tentativa que nao terminou o percurso. Semente 41001: nao concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
         "views": [
           {
             "id": "game",
-            "label": "Visão do jogo",
-            "file": "world_level2_conservative_failure_game.gif.b64"
+            "label": "Visao do jogo",
+            "file": "world_level2_conservative_failure_game.gif.b64",
+            "parts": [
+              "world_level2_conservative_failure_game.gif.b64.part1",
+              "world_level2_conservative_failure_game.gif.b64.part2"
+            ]
           },
           {
             "id": "ai",
-            "label": "Visão da IA",
+            "label": "Visao da IA",
             "file": "world_level2_conservative_failure.gif.b64"
           }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "world-l1-frozen",
-    "label": "Training World — Nivel 1 (movimento)",
-    "metrics": {
-      "IA visual (24 mundos)": 1,
-      "Sempre-direita (24 mundos)": 1
-    },
-    "evaluation_note": "Taxas de 24 mundos novos, modelo congelado. Neste nivel simples, a regra sempre-direita tambem venceu todos.",
-    "replays": [
-      {
-        "file": "world_level1_movement_game.gif.b64",
-        "encoding": "base64-gif",
-        "label": "IA aprendida — movimento",
-        "description": "CNN Double DQN do nivel 1, sem treinamento durante a gravacao. Semente 20001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
-        "views": [
-          {
-            "id": "game",
-            "label": "Visão do jogo",
-            "file": "world_level1_movement_game.gif.b64"
-          },
-          {
-            "id": "ai",
-            "label": "Visão da IA",
-            "file": "world_level1_movement.gif.b64"
-          }
-        ]
+        ],
+        "label": "Adaptacao conservadora — falha",
+        "description": "Exemplo de tentativa que nao terminou o percurso. Semente 41001: nao concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
       }
     ]
   },
