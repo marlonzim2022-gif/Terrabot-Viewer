@@ -1,5 +1,199 @@
 [
   {
+    "id": "world-memory-38851443955",
+    "label": "Nível 2 — Experimento de memória #38851443955",
+    "metrics": {
+      "Modelo original (32 mundos)": 0.71875,
+      "Controle 23 (32 mundos)": 0.625,
+      "Controle 41 (32 mundos)": 0.6875,
+      "Memória 23 (32 mundos)": 0.625,
+      "Memória 41 (32 mundos)": 0.59375
+    },
+    "replays": [
+      {
+        "file": "memory_38851443955_original_sucesso_game-3fb446dbdc339d4b.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Modelo original — sucesso",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_original_sucesso_game-3fb446dbdc339d4b.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_original_sucesso-978bd587d59876b9.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_original_falha_game-21645eb8aff51e80.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Modelo original — falha",
+        "description": "Avaliação após treino, semente 61005. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_original_falha_game-21645eb8aff51e80.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_original_falha-7d1e3987c6e6e4ea.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_control_23_sucesso_game-c590cefe1cc41eac.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 23 — sucesso",
+        "description": "Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_control_23_sucesso_game-c590cefe1cc41eac.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_control_23_sucesso-8e7a55ffc7c6a658.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_control_23_falha_game-0491c82c3e5c9907.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 23 — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_control_23_falha_game-0491c82c3e5c9907.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_control_23_falha-65518ec105354210.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_control_41_sucesso_game-947131490baeed23.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 41 — sucesso",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_control_41_sucesso_game-947131490baeed23.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_control_41_sucesso-11428418219425fc.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_control_41_falha_game-cc0bd333f3ac9444.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 41 — falha",
+        "description": "Avaliação após treino, semente 61003. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_control_41_falha_game-cc0bd333f3ac9444.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_control_41_falha-9f6173005109e490.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_memory_23_sucesso_game-e5a854f9a01f4f97.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memória 23 — sucesso",
+        "description": "Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_memory_23_sucesso_game-e5a854f9a01f4f97.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_memory_23_sucesso-2af389179d97b5a6.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_memory_23_falha_game-f8b27cf7dc84a3d8.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memória 23 — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_memory_23_falha_game-f8b27cf7dc84a3d8.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_memory_23_falha-ed0d7867c639968e.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_memory_41_sucesso_game-54f6127388b33e54.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memória 41 — sucesso",
+        "description": "Avaliação após treino, semente 61003. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_memory_41_sucesso_game-54f6127388b33e54.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_memory_41_sucesso-f62b61ed33b86025.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38851443955_memory_41_falha_game-df8528df60de87d5.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memória 41 — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38851443955_memory_41_falha_game-df8528df60de87d5.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38851443955_memory_41_falha-acbce0b4111c93f9.gif.b64"
+          }
+        ]
+      }
+    ],
+    "evaluation_note": "32 mundos por modelo, compartilhados na comparação. GIFs são exemplos de sucesso e falha após treino. Consulte as taxas; um exemplo não comprova melhora."
+  },
+  {
     "id": "world-l1-frozen",
     "label": "Training World — Nivel 1 (movimento)",
     "metrics": {
