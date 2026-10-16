@@ -271,8 +271,11 @@ async function loadCatalog() {
     for (const version of manifest) {
       const option = document.createElement("option");
       option.value = version.id;
-      const state = version.run?.stages?.training?.state;
-      option.textContent = version.label + (state ? ` · ${stateLabels[state] || state}` : " · Histórico");
+      const stages = Object.values(version.run?.stages || {});
+      const problem = stages.find(stage => stage.state === "failed") || stages.find(stage => stage.state === "interrupted");
+      const state = problem?.state || version.run?.stages?.training?.state;
+      const label = state === "failed" ? "Falha em etapa" : stateLabels[state] || state;
+      option.textContent = version.label + (state ? ` · ${label}` : " · Histórico");
       versionSelect.append(option);
       compareSelect.append(new Option(version.label,version.id));
     }

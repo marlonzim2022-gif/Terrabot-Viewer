@@ -97,6 +97,12 @@ class ViewerTests(unittest.TestCase):
         self.assertIn('Treinamento: Falhou',self.page.locator('#execution-status').inner_text())
         self.assertIn('Não há GIF',self.page.locator('#empty').inner_text())
         self.assertFalse(self.page.locator('#video').is_visible())
+        self.assertIn('Falha em etapa',self.page.locator('#version option').first.inner_text())
+        self.data[0]['run']['stages']['training']={'state':'succeeded','code':None}
+        self.data[0]['run']['stages']['evaluation']={'state':'interrupted','code':'KeyboardInterrupt'}
+        self.page.click('#refresh')
+        self.page.wait_for_function("document.querySelector('#version option').textContent.includes('Interrompido')")
+        self.assertIn('Avaliação: Interrompido',self.page.locator('#execution-status').inner_text())
 
     def test_historical_raw_gif_and_notes_still_work(self):
         self.load('?experiment=v9')
