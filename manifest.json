@@ -1,5 +1,106 @@
 [
   {
+    "id": "world-flag-trajectories-38857883789",
+    "label": "Nível 2 — Por que falhou na bandeira #38857883789",
+    "metrics": {
+      "Modelo original, contato real (32 mundos)": 0.34375,
+      "Modelo memória 41, contato real (32 mundos)": 0.21875
+    },
+    "evaluation_note": "Exemplos selecionados dos mesmos 32 mundos previamente avaliados. A meta só conta quando o corpo do personagem toca o mastro. As legendas são classificações de trajetória para pesquisa, não novas taxas de sucesso ou novo treinamento.",
+    "replays": [
+      {
+        "file": "flag_diagnosis_38857883789_0_original_game-5f8931086ea49116.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Passou abaixo da bandeira",
+        "description": "Semente 61001. Passou abaixo da bandeira. Comparacao de trajetorias usando contato real com o mastro; apenas pixels e propria acao anterior entram na rede. Replay visual real do simulador, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_diagnosis_38857883789_0_original_game-5f8931086ea49116.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_diagnosis_38857883789_0_original-b8f961ce92bd9837.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_diagnosis_38857883789_1_original_game-12e7bf0740a89e9a.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Passou acima da bandeira",
+        "description": "Semente 61022. Passou acima da bandeira. Comparacao de trajetorias usando contato real com o mastro; apenas pixels e propria acao anterior entram na rede. Replay visual real do simulador, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_diagnosis_38857883789_1_original_game-12e7bf0740a89e9a.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_diagnosis_38857883789_1_original-d0b184c0c8251d13.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_diagnosis_38857883789_2_original_game-72ec532d81c53ee6.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Caiu antes da meta",
+        "description": "Semente 61005. Caiu antes da meta. Comparacao de trajetorias usando contato real com o mastro; apenas pixels e propria acao anterior entram na rede. Replay visual real do simulador, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_diagnosis_38857883789_2_original_game-72ec532d81c53ee6.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_diagnosis_38857883789_2_original-4d9b2410fdf2f670.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_diagnosis_38857883789_3_original_game-3900303f24e1fe57.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Tocou a bandeira",
+        "description": "Semente 61002. Tocou a bandeira. Comparacao de trajetorias usando contato real com o mastro; apenas pixels e propria acao anterior entram na rede. Replay visual real do simulador, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_diagnosis_38857883789_3_original_game-3900303f24e1fe57.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_diagnosis_38857883789_3_original-e56726b34ce5e78b.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_diagnosis_38857883789_4_memory_41_game-a52b3f649aaf2594.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memoria: passou abaixo",
+        "description": "Semente 61004. Memoria: passou abaixo. Comparacao de trajetorias usando contato real com o mastro; apenas pixels e propria acao anterior entram na rede. Replay visual real do simulador, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_diagnosis_38857883789_4_memory_41_game-a52b3f649aaf2594.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_diagnosis_38857883789_4_memory_41-c05acd9c34d6197d.gif.b64"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "world-flag-contact-38854787288",
     "label": "Nível 2 — Contato com a bandeira #38854787288",
     "metrics": {
