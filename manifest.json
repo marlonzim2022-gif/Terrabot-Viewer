@@ -1,5 +1,341 @@
 [
   {
+    "id": "tw-38954736474-1",
+    "label": "Terrabot - Teste operacional 1 · tw-38954736474-1",
+    "metrics": {
+      "Avaliação holdout": 0.0
+    },
+    "evaluation_note": "Replay de avaliação, não transmissão ao vivo. Tentativas incompletas não são contadas como derrotas. Confira os estados das etapas.",
+    "replays": [
+      {
+        "file": "episode-0-game-026050fd349184a8.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Avaliação · não concluiu",
+        "description": "Duas visões da mesma tentativa. A visão da IA contém os pixels RGB 84×84; o jogo mostra cenário, personagem, objetivo e ação.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "episode-0-game-026050fd349184a8.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "episode-0-ai-71d24ef35251d68a.gif.b64"
+          }
+        ],
+        "episode": 0,
+        "seed": 9001,
+        "success": false,
+        "capture_kind": "evaluation",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "a444560ff0f20bc02f1e115b2d5c83b1415a7655b1c4833609bb4a7e63e015e4"
+          },
+          {
+            "decision": 1,
+            "action": 0,
+            "observation_sha256": "313e380d25a54a18f2758b226c5af266ef440aad503cdabb0722a399b0aa6f86"
+          },
+          {
+            "decision": 2,
+            "action": 0,
+            "observation_sha256": "fabc754ae754830a4a8c6e63f1eb85e45d00cb0ac9b2d46b10be62d3f1d51d2d"
+          },
+          {
+            "decision": 3,
+            "action": 1,
+            "observation_sha256": "aa7b63565a32da24c6325b54391c9c2bf3b38413619b4f0d6beaab12a77216c2"
+          },
+          {
+            "decision": 4,
+            "action": 0,
+            "observation_sha256": "f8f2d615c7a74d119f4ee98f5da7862285cc007bf5796bd1dd718a80fe699ead"
+          },
+          {
+            "decision": 5,
+            "action": 0,
+            "observation_sha256": "683aafa38e22661da78680f4270bc889fa0c910733bd19974ceee661ae5e9c7a"
+          },
+          {
+            "decision": 6,
+            "action": 0,
+            "observation_sha256": "009ccb870851f32787e8fd3efbbab1afd3613b57c79e13ef99a6deaaddd75992"
+          },
+          {
+            "decision": 7,
+            "action": 0,
+            "observation_sha256": "cc2a6ba82c2c83f8c76081fa64d142138a8af49aed904018a57e0a661e744b81"
+          },
+          {
+            "decision": 8,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 9,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 10,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 11,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 12,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 13,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 14,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 15,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 16,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 17,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 18,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 19,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 20,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 21,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 22,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 23,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 24,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 25,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 26,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 27,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 28,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 29,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 30,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 31,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 32,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 33,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 34,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 35,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 36,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 37,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 38,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 39,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          },
+          {
+            "decision": 40,
+            "action": 0,
+            "observation_sha256": "05bf3b7f78d46beca7c04218a410517881747e90e23803f9476958b5681df05a"
+          }
+        ]
+      }
+    ],
+    "run": {
+      "schema": "terrabot-run-v1",
+      "id": "tw-38954736474-1",
+      "created_at": "2026-10-16T19:24:57.877816+00:00",
+      "code": {
+        "version": "Terrabot - Teste operacional 1",
+        "commit": "26206cd91afa21e72d22081781964a2b658ca747",
+        "dirty": false,
+        "source_sha256": "16a2d31698c402e78462e4d1e64e0eae0929b9b6e7ec81c32fc62a2af0b53b4a"
+      },
+      "model": {
+        "format": "terrabot-training-world-ddqn-v1",
+        "sha256": "f5702c683a4307f464b7aea36eeed3c33cc2cf00dbad5d76b89e18820ce5eca2"
+      },
+      "config": {
+        "episodes": 1,
+        "task_id": 1,
+        "frames_per_step": 3,
+        "max_decisions": 40,
+        "evaluation_episodes": 2,
+        "seed": 0,
+        "batch_size": 16,
+        "replay_capacity": 5000,
+        "train_seeds": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          201,
+          202,
+          203,
+          301,
+          302,
+          401,
+          501
+        ],
+        "holdout_seeds": [
+          9001,
+          9002,
+          9003,
+          9004,
+          9005,
+          9999,
+          8888,
+          7777
+        ],
+        "mode": "fresh"
+      },
+      "goal_criterion": "flag-contact-v1",
+      "episodes": {
+        "training": {
+          "completed": 1,
+          "wins": 0,
+          "losses": 1,
+          "endings": {
+            "win": 0,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 1,
+            "other": 0
+          }
+        },
+        "evaluation": {
+          "completed": 2,
+          "wins": 0,
+          "losses": 2,
+          "endings": {
+            "win": 0,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 2,
+            "other": 0
+          }
+        }
+      },
+      "stages": {
+        "training": {
+          "state": "succeeded",
+          "code": null
+        },
+        "evaluation": {
+          "state": "succeeded",
+          "code": null
+        },
+        "recording": {
+          "state": "succeeded",
+          "code": null
+        },
+        "publication": {
+          "state": "submitted",
+          "code": null
+        }
+      },
+      "errors": []
+    }
+  },
+  {
     "id": "world-signed-rgb-38867237788",
     "label": "Nível 2 — Diferença visual vs quadros RGB",
     "metrics": {
