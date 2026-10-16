@@ -2,28 +2,51 @@
 
 **Assistir pelo navegador:** https://marlonzim2022-gif.github.io/Terrabot-Viewer/
 
-Visualizador público dos replays do Terrabot. O projeto principal, modelos e treinamento permanecem no repositório privado.
+Visualizador público de animações reais de execução de políticas treinadas
+em simuladores do Terrabot. A rede neural, seus checkpoints e o código de
+treinamento permanecem em repositórios privados.
 
-## Estado atual
+## Experimentos disponíveis
 
-- ✅ GitHub Pages ativo no repositório público.
-- ✅ V5 disponível com quatro animações.
-- ✅ Catálogo de estatísticas agregado para cenários originais e inéditos.
-- 🟡 Script para publicação automática preparado no Terrabot privado.
-- ⏳ Publicação automática **ainda aguarda autorização de escrita restrita a este repositório**.
+- **Training World — Nível 1:** replay da CNN Double DQN congelada
+  percorrendo o cenário simples. Avaliação separada em **24 mundos**:
+  modelo 24/24 e regra simples sempre-direita 24/24.
+- **Training World — Nível 2:** três gravações de políticas congeladas,
+  incluindo uma tentativa malsucedida. Avaliação independente de **32 mundos**:
+  modelo original do Nível 1 22/32 (**68,75%**) e adaptação conservadora
+  21/32 (**65,625%**). Isso não prova ganho com o fine-tuning.
+- **PixelWorld V5–V9:** replays e métricas dos experimentos anteriores,
+  mantidos como histórico e exibidos em opções próprias.
 
-A V5 obteve **0/50** no cenário original e **11/50 (22%)** em posições inéditas. Os GIFs são exemplos individuais, não demonstram uma vitória necessariamente.
+As animações mostram **avaliações após o treinamento**, não a sequência
+de cada atualização de pesos. Um único GIF é exemplo de comportamento,
+não substitui a taxa de sucesso obtida em vários mundos.
 
-**Aviso:** os GIFs mostram o simulador visual PixelWorld, não o jogo Terraria Mobile.
+**Importante:** nem os replays do PixelWorld nem os do novo Training World
+são vídeos do Terraria Mobile. Nenhuma integração ao Terraria real é
+demonstrada aqui.
 
-## Publicação futura
+## Como os novos GIFs chegam à página
 
-Após o treino bem-sucedido no repositório privado, `scripts/publish_replays.py` foi preparado para validar os resultados e publicar somente GIFs permitidos e duas estatísticas resumidas. Nenhum modelo (`.pt`), código privado ou log é transferido.
+Os quatro GIFs do Training World foram gravados em 16/10/2026 UTC a partir
+de checkpoints já produzidos e auditados por GitHub Actions no repositório
+privado `Terrabot-Training-World-Studio`. Após validação, somente os GIFs
+aprovados (codificados como arquivos texto `*.gif.b64`) e **métricas
+agregadas** foram copiados para `media/` e `manifest.json`.
+O JavaScript do viewer decodifica os GIFs localmente no navegador.
 
-O token padrão do GitHub Actions **não** permite escrever em outro repositório. Para ativar a publicação automática, é necessária uma autorização adicional (por exemplo, credencial restrita a `Terrabot-Viewer`) guardada como secret no repositório privado. **Não coloque segredos neste repositório público**.
+O conteúdo foi publicado **antes** da atualização do manifesto; as entradas
+V5–V9 foram preservadas. Nenhuma credencial, peso de rede, log privado ou
+código do motor de treinamento é distribuído pelo site.
 
-Os arquivos `media/trained*.gif` presentes vieram da publicação manual da V5 e continuam funcionando. A integração futura criará nomes versionados sem removê-los.
+A geração está automatizada em um workflow separado da branch experimental
+`feat/new-world-replays`; a transferência ao repositório público foi feita
+de forma controlada nesta publicação. Para futuras publicações automáticas,
+será necessária uma credencial **restrita exclusivamente ao Viewer**,
+configurada como Secret do Studio. Não colar tokens em arquivos públicos
+ou na conversa.
 
 ## Custos
 
-Hospedagem no GitHub Pages de repositório público, sem assinatura; execução de Actions sujeita às cotas gratuitas do GitHub.
+Hospedagem GitHub Pages em repositório público; a execução do GitHub Actions
+depende das cotas gratuitas do GitHub.
