@@ -10,22 +10,58 @@
     "evaluation_note": "Taxas de 32 mundos distintos (auditoria congelada); um GIF nao representa a taxa completa. Fine-tuning nao demonstrou melhora.",
     "replays": [
       {
-        "file": "world_level2_original_success.gif.b64",
+        "file": "world_level2_original_success_game.gif.b64",
         "encoding": "base64-gif",
         "label": "Pesos originais — sucesso",
-        "description": "Rede do nivel 1 aplicada ao desafio de saltos. Semente 41001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "description": "Rede do nivel 1 aplicada ao desafio de saltos. Semente 41001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "world_level2_original_success_game.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "world_level2_original_success.gif.b64"
+          }
+        ]
       },
       {
-        "file": "world_level2_conservative_success.gif.b64",
+        "file": "world_level2_conservative_success_game.gif.b64",
         "encoding": "base64-gif",
         "label": "Adaptacao conservadora — sucesso",
-        "description": "Rede com ajuste conservador para o nivel 2. Semente 41003: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "description": "Rede com ajuste conservador para o nivel 2. Semente 41003: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "world_level2_conservative_success_game.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "world_level2_conservative_success.gif.b64"
+          }
+        ]
       },
       {
-        "file": "world_level2_conservative_failure.gif.b64",
+        "file": "world_level2_conservative_failure_game.gif.b64",
         "encoding": "base64-gif",
         "label": "Adaptacao conservadora — falha",
-        "description": "Exemplo de tentativa que nao terminou o percurso. Semente 41001: nao concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "description": "Exemplo de tentativa que nao terminou o percurso. Semente 41001: nao concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "world_level2_conservative_failure_game.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "world_level2_conservative_failure.gif.b64"
+          }
+        ]
       }
     ]
   },
@@ -39,10 +75,22 @@
     "evaluation_note": "Taxas de 24 mundos novos, modelo congelado. Neste nivel simples, a regra sempre-direita tambem venceu todos.",
     "replays": [
       {
-        "file": "world_level1_movement.gif.b64",
+        "file": "world_level1_movement_game.gif.b64",
         "encoding": "base64-gif",
         "label": "IA aprendida — movimento",
-        "description": "CNN Double DQN do nivel 1, sem treinamento durante a gravacao. Semente 20001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "description": "CNN Double DQN do nivel 1, sem treinamento durante a gravacao. Semente 20001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile. Alternar entre tela completa do jogo e os pixels da rede neural no seletor Visualização.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "world_level1_movement_game.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "world_level1_movement.gif.b64"
+          }
+        ]
       }
     ]
   },
