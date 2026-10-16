@@ -1,5 +1,341 @@
 [
   {
+    "id": "tw-38964437676-1",
+    "label": "Terrabot - Piloto visual 3A3 · tw-38964437676-1",
+    "metrics": {
+      "Avaliação holdout": 0.0
+    },
+    "evaluation_note": "Replay de avaliação, não transmissão ao vivo. Tentativas incompletas não são contadas como derrotas. Confira os estados das etapas.",
+    "replays": [
+      {
+        "file": "episode-0-game-dcf4a22f63d66c8f.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Avaliação · não concluiu",
+        "description": "Duas visões da mesma tentativa. A visão da IA contém os pixels RGB 84×84; o jogo mostra cenário, personagem, objetivo e ação.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "episode-0-game-dcf4a22f63d66c8f.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "episode-0-ai-d712a05d840ac22c.gif.b64"
+          }
+        ],
+        "episode": 0,
+        "seed": 9001,
+        "success": false,
+        "capture_kind": "evaluation",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "a444560ff0f20bc02f1e115b2d5c83b1415a7655b1c4833609bb4a7e63e015e4"
+          },
+          {
+            "decision": 1,
+            "action": 2,
+            "observation_sha256": "aa50d8ee829a0644f2f8a1a35a4538b13a6089665d336462356d687951aa114a"
+          },
+          {
+            "decision": 2,
+            "action": 2,
+            "observation_sha256": "9ca3109e258c734394fdbf5bd10f6f62cfa5d8568ab8ce8e71f975bf0b226b91"
+          },
+          {
+            "decision": 3,
+            "action": 2,
+            "observation_sha256": "79c845acab86036a29290859d0d83ac2009f929ff58799d2e2a12b1be482844f"
+          },
+          {
+            "decision": 4,
+            "action": 2,
+            "observation_sha256": "5a281868f10c43772ec6a310fc5460df3aac130a525debf91da1c3d9be0c6393"
+          },
+          {
+            "decision": 5,
+            "action": 2,
+            "observation_sha256": "299475358e55296fded1af6ed4a6732b71cfe152f3f13b0a65841ba37259c817"
+          },
+          {
+            "decision": 6,
+            "action": 2,
+            "observation_sha256": "3781a93004b780744c6d8f9ffbe4bea0d98353afd2594e6955b0b49d238163be"
+          },
+          {
+            "decision": 7,
+            "action": 2,
+            "observation_sha256": "552d6d946157ce6fa5ce269ce3d0df9c740923cb0a10444d80ae53379248dcc3"
+          },
+          {
+            "decision": 8,
+            "action": 2,
+            "observation_sha256": "3332debfad4f507f69c0ea36f0e385cb54218b35697be9bff4fda6f7d990b93d"
+          },
+          {
+            "decision": 9,
+            "action": 2,
+            "observation_sha256": "a9ce30d0c62299ebb9b12c0670d586d07160d8a917772ef4bb5d185313cd8e45"
+          },
+          {
+            "decision": 10,
+            "action": 2,
+            "observation_sha256": "1dc1201fa74d050595cf03698c1d7ca2534ab17846b1ae1f258853d51464fbf8"
+          },
+          {
+            "decision": 11,
+            "action": 2,
+            "observation_sha256": "5821c779fd105afab51195044d60f0a4599c68bbf1dc8f6bbf47ee867ae7fb44"
+          },
+          {
+            "decision": 12,
+            "action": 2,
+            "observation_sha256": "c383d9e87c674f205806eedc503b6045f5ea01ebefcf71bd279dece481f97c0e"
+          },
+          {
+            "decision": 13,
+            "action": 2,
+            "observation_sha256": "55e2077119a6ac6eacebcebc5bc83a53e226c8e2b52f33efbdbb8230b477f054"
+          },
+          {
+            "decision": 14,
+            "action": 2,
+            "observation_sha256": "e77b8cf7ed67cab5a5e1519ccb5c4a99f6b1a5136b8ba1729d6b8c448e5694c9"
+          },
+          {
+            "decision": 15,
+            "action": 2,
+            "observation_sha256": "4bca27e69b6ed991ddbcf93b2fefabc81d9e42e3a6c48b2125ea06561d39892b"
+          },
+          {
+            "decision": 16,
+            "action": 2,
+            "observation_sha256": "8a058dbab4cdeb7acb22add262dcae9297f9a8c440a7f05583b39d58bf7f81be"
+          },
+          {
+            "decision": 17,
+            "action": 2,
+            "observation_sha256": "b2767843b5e75dbfc98a085d2792a42ac52f4ae894cfc861d839448d9399c119"
+          },
+          {
+            "decision": 18,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 19,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 20,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 21,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 22,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 23,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 24,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 25,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 26,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 27,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 28,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 29,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 30,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 31,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 32,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 33,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 34,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 35,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 36,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 37,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 38,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 39,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          },
+          {
+            "decision": 40,
+            "action": 2,
+            "observation_sha256": "0d1ea6dc736e2fa8d35e4cd7930cdff94175783a4fed19a2a6ba72d7859e1c4c"
+          }
+        ]
+      }
+    ],
+    "run": {
+      "schema": "terrabot-run-v1",
+      "id": "tw-38964437676-1",
+      "created_at": "2026-10-16T20:44:45.935183+00:00",
+      "code": {
+        "version": "Terrabot - Piloto visual 3A3",
+        "commit": "a2a1db79cebe31b072bb6b060dcf40cb714f6e6e",
+        "dirty": false,
+        "source_sha256": "addafc5f4e8a46bc04b3c896c7a4d2e99cd739bad112a48558d85c730fec2770"
+      },
+      "model": {
+        "format": "terrabot-training-world-ddqn-v1",
+        "sha256": "0104c97d2d66989a2ac508958a9a0455f458e39c934c9c4f065e19f47ff265a6"
+      },
+      "config": {
+        "episodes": 6,
+        "task_id": 1,
+        "frames_per_step": 3,
+        "max_decisions": 40,
+        "evaluation_episodes": 8,
+        "seed": 0,
+        "batch_size": 16,
+        "replay_capacity": 5000,
+        "train_seeds": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          201,
+          202,
+          203,
+          301,
+          302,
+          401,
+          501
+        ],
+        "holdout_seeds": [
+          9001,
+          9002,
+          9003,
+          9004,
+          9005,
+          9999,
+          8888,
+          7777
+        ],
+        "mode": "fresh"
+      },
+      "goal_criterion": "flag-contact-v1",
+      "episodes": {
+        "training": {
+          "completed": 6,
+          "wins": 0,
+          "losses": 6,
+          "endings": {
+            "win": 0,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 6,
+            "other": 0
+          }
+        },
+        "evaluation": {
+          "completed": 8,
+          "wins": 0,
+          "losses": 8,
+          "endings": {
+            "win": 0,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 8,
+            "other": 0
+          }
+        }
+      },
+      "stages": {
+        "training": {
+          "state": "succeeded",
+          "code": null
+        },
+        "evaluation": {
+          "state": "succeeded",
+          "code": null
+        },
+        "recording": {
+          "state": "succeeded",
+          "code": null
+        },
+        "publication": {
+          "state": "submitted",
+          "code": null
+        }
+      },
+      "errors": []
+    }
+  },
+  {
     "id": "tw-38954736474-1",
     "label": "Terrabot - Teste operacional 1 · tw-38954736474-1",
     "metrics": {
