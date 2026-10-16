@@ -26,9 +26,28 @@ não substitui a taxa de sucesso obtida em vários mundos.
 são vídeos do Terraria Mobile. Nenhuma integração ao Terraria real é
 demonstrada aqui.
 
+## Escolher entre tela do jogo e visão da IA
+
+Nos replays de **Training World — Nível 1** e **Training World — Nível 2**,
+o seletor **Visualização** aparece logo abaixo do seletor de gravação:
+
+- **Visão do jogo (padrão):** viewport horizontal, desenhada pelo mesmo
+  `GameRenderer` usado na tela do simulador, com mundo, personagem,
+  parallax, iluminação e HUD do canvas. A imagem é reduzida para facilitar
+  reprodução no celular.
+- **Visão da IA:** mostra a imagem RGB de 84×84 pixels usada pelo DQN
+  para tomar a decisão, com legenda da ação e da semente.
+
+Os GIFs são sincronizados por **mesma semente, mesma política congelada e
+mesmo episódio**, sem treinamento durante a captura. A visão do jogo
+exibe o canvas principal; os botões virtuais sobrepostos pelo React no
+Google AI Studio não fazem parte do canvas exportado.
+
+As versões V5–V9 não foram modificadas e mantêm apenas sua animação original.
+
 ## Como os novos GIFs chegam à página
 
-Os quatro GIFs do Training World foram gravados em 16/10/2026 UTC a partir
+Os quatro pares de GIFs do Training World foram gravados em 16/10/2026 UTC a partir
 de checkpoints já produzidos e auditados por GitHub Actions no repositório
 privado `Terrabot-Training-World-Studio`. Após validação, somente os GIFs
 aprovados (codificados como arquivos texto `*.gif.b64`) e **métricas
