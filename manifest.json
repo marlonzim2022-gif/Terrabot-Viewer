@@ -1,7 +1,183 @@
 [
   {
+    "id": "world-flag-contact-38854787288",
+    "label": "Nível 2 — Contato com a bandeira #38854787288",
+    "metrics": {
+      "Modelo original (32 mundos)": 0.34375,
+      "Controle 23 (32 mundos)": 0.125,
+      "Controle 41 (32 mundos)": 0.28125,
+      "Memória 23 (32 mundos)": 0.0,
+      "Memória 41 (32 mundos)": 0.21875
+    },
+    "replays": [
+      {
+        "file": "memory_38854787288_original_sucesso_game-9a388349ab227aa5.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Modelo original — sucesso",
+        "description": "Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_original_sucesso_game-9a388349ab227aa5.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_original_sucesso-5c50563eef6271d3.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_original_falha_game-95cb6c657896d9f5.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Modelo original — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_original_falha_game-95cb6c657896d9f5.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_original_falha-76fbf3b1100bcb0a.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_control_23_sucesso_game-0336ce0512dc59f6.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 23 — sucesso",
+        "description": "Avaliação após treino, semente 61012. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_control_23_sucesso_game-0336ce0512dc59f6.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_control_23_sucesso-3d1d6bb37a9ac505.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_control_23_falha_game-906380bdf41ee507.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 23 — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_control_23_falha_game-906380bdf41ee507.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_control_23_falha-65518ec105354210.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_control_41_sucesso_game-a949460018b64829.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 41 — sucesso",
+        "description": "Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_control_41_sucesso_game-a949460018b64829.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_control_41_sucesso-fa8f216d48c7472c.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_control_41_falha_game-8807e7be2c13c7aa.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle 41 — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_control_41_falha_game-8807e7be2c13c7aa.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_control_41_falha-10410e3917a5d348.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_memory_23_falha_game-b3dbcdba5caef535.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memória 23 — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_memory_23_falha_game-b3dbcdba5caef535.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_memory_23_falha-ed0d7867c639968e.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_memory_41_sucesso_game-972a3ae5120fe14e.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memória 41 — sucesso",
+        "description": "Avaliação após treino, semente 61003. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_memory_41_sucesso_game-972a3ae5120fe14e.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_memory_41_sucesso-7de3fcb4321101f8.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "memory_38854787288_memory_41_falha_game-81d26e06769dafbd.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Memória 41 — falha",
+        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "memory_38854787288_memory_41_falha_game-81d26e06769dafbd.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "memory_38854787288_memory_41_falha-acbce0b4111c93f9.gif.b64"
+          }
+        ]
+      }
+    ],
+    "evaluation_note": "Sucesso exige contato com o mastro visível, na altura da bandeira. Reavaliação de modelos anteriores em 32 mundos já conhecidos; não é novo treino. 32 mundos por modelo, compartilhados na comparação. GIFs são exemplos de sucesso e falha após treino. Consulte as taxas; um exemplo não comprova melhora."
+  },
+  {
     "id": "world-memory-38851443955",
-    "label": "Nível 2 — Experimento de memória #38851443955",
+    "label": "Histórico — Nível 2 — Experimento de memória #38851443955",
     "metrics": {
       "Modelo original (32 mundos)": 0.71875,
       "Controle 23 (32 mundos)": 0.625,
@@ -13,8 +189,8 @@
       {
         "file": "memory_38851443955_original_sucesso_game-3fb446dbdc339d4b.gif.b64",
         "encoding": "base64-gif",
-        "label": "Modelo original — sucesso",
-        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Modelo original — sucesso (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -31,8 +207,8 @@
       {
         "file": "memory_38851443955_original_falha_game-21645eb8aff51e80.gif.b64",
         "encoding": "base64-gif",
-        "label": "Modelo original — falha",
-        "description": "Avaliação após treino, semente 61005. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Modelo original — falha (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61005. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -49,8 +225,8 @@
       {
         "file": "memory_38851443955_control_23_sucesso_game-c590cefe1cc41eac.gif.b64",
         "encoding": "base64-gif",
-        "label": "Controle 23 — sucesso",
-        "description": "Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Controle 23 — sucesso (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -67,8 +243,8 @@
       {
         "file": "memory_38851443955_control_23_falha_game-0491c82c3e5c9907.gif.b64",
         "encoding": "base64-gif",
-        "label": "Controle 23 — falha",
-        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Controle 23 — falha (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -85,8 +261,8 @@
       {
         "file": "memory_38851443955_control_41_sucesso_game-947131490baeed23.gif.b64",
         "encoding": "base64-gif",
-        "label": "Controle 41 — sucesso",
-        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Controle 41 — sucesso (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -103,8 +279,8 @@
       {
         "file": "memory_38851443955_control_41_falha_game-cc0bd333f3ac9444.gif.b64",
         "encoding": "base64-gif",
-        "label": "Controle 41 — falha",
-        "description": "Avaliação após treino, semente 61003. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Controle 41 — falha (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61003. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -121,8 +297,8 @@
       {
         "file": "memory_38851443955_memory_23_sucesso_game-e5a854f9a01f4f97.gif.b64",
         "encoding": "base64-gif",
-        "label": "Memória 23 — sucesso",
-        "description": "Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Memória 23 — sucesso (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61002. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -139,8 +315,8 @@
       {
         "file": "memory_38851443955_memory_23_falha_game-f8b27cf7dc84a3d8.gif.b64",
         "encoding": "base64-gif",
-        "label": "Memória 23 — falha",
-        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Memória 23 — falha (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -157,8 +333,8 @@
       {
         "file": "memory_38851443955_memory_41_sucesso_game-54f6127388b33e54.gif.b64",
         "encoding": "base64-gif",
-        "label": "Memória 41 — sucesso",
-        "description": "Avaliação após treino, semente 61003. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Memória 41 — sucesso (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61003. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -175,8 +351,8 @@
       {
         "file": "memory_38851443955_memory_41_falha_game-df8528df60de87d5.gif.b64",
         "encoding": "base64-gif",
-        "label": "Memória 41 — falha",
-        "description": "Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
+        "label": "Memória 41 — falha (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Avaliação após treino, semente 61001. Mesmo episódio nas duas visões. Simulador Training World.",
         "views": [
           {
             "id": "game",
@@ -191,16 +367,16 @@
         ]
       }
     ],
-    "evaluation_note": "32 mundos por modelo, compartilhados na comparação. GIFs são exemplos de sucesso e falha após treino. Consulte as taxas; um exemplo não comprova melhora."
+    "evaluation_note": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. 32 mundos por modelo, compartilhados na comparação. GIFs são exemplos de sucesso e falha após treino. Consulte as taxas; um exemplo não comprova melhora."
   },
   {
     "id": "world-l1-frozen",
-    "label": "Training World — Nivel 1 (movimento)",
+    "label": "Histórico — Training World — Nivel 1 (movimento)",
     "metrics": {
       "IA visual (24 mundos)": 1,
       "Sempre-direita (24 mundos)": 1
     },
-    "evaluation_note": "Taxas de 24 mundos novos, modelo congelado. Neste nivel simples, a regra sempre-direita tambem venceu todos.",
+    "evaluation_note": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Taxas de 24 mundos novos, modelo congelado. Neste nivel simples, a regra sempre-direita tambem venceu todos.",
     "replays": [
       {
         "file": "world_level1_movement_game.gif.b64",
@@ -217,20 +393,20 @@
             "file": "world_level1_movement.gif.b64"
           }
         ],
-        "label": "IA aprendida — movimento",
-        "description": "CNN Double DQN do nivel 1, sem treinamento durante a gravacao. Semente 20001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "label": "IA aprendida — movimento (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. CNN Double DQN do nivel 1, sem treinamento durante a gravacao. Semente 20001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
       }
     ]
   },
   {
     "id": "world-l2-frozen",
-    "label": "Training World — Nivel 2 (saltos)",
+    "label": "Histórico — Training World — Nivel 2 (saltos)",
     "metrics": {
       "Modelo original (32 mundos)": 0.6875,
       "Fine-tuning conservador (32)": 0.65625,
       "Salto continuo (32 mundos)": 0
     },
-    "evaluation_note": "Taxas de 32 mundos distintos (auditoria congelada); um GIF nao representa a taxa completa. Fine-tuning nao demonstrou melhora.",
+    "evaluation_note": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Taxas de 32 mundos distintos (auditoria congelada); um GIF nao representa a taxa completa. Fine-tuning nao demonstrou melhora.",
     "replays": [
       {
         "file": "world_level2_original_success_game.gif.b64",
@@ -247,8 +423,8 @@
             "file": "world_level2_original_success.gif.b64"
           }
         ],
-        "label": "Pesos originais — sucesso",
-        "description": "Rede do nivel 1 aplicada ao desafio de saltos. Semente 41001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "label": "Pesos originais — sucesso (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Rede do nivel 1 aplicada ao desafio de saltos. Semente 41001: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
       },
       {
         "file": "world_level2_conservative_success_game.gif.b64",
@@ -265,8 +441,8 @@
             "file": "world_level2_conservative_success.gif.b64"
           }
         ],
-        "label": "Adaptacao conservadora — sucesso",
-        "description": "Rede com ajuste conservador para o nivel 2. Semente 41003: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "label": "Adaptacao conservadora — sucesso (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Rede com ajuste conservador para o nivel 2. Semente 41003: concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
       },
       {
         "file": "world_level2_conservative_failure_game.gif.b64",
@@ -287,8 +463,8 @@
             "file": "world_level2_conservative_failure.gif.b64"
           }
         ],
-        "label": "Adaptacao conservadora — falha",
-        "description": "Exemplo de tentativa que nao terminou o percurso. Semente 41001: nao concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
+        "label": "Adaptacao conservadora — falha (critério antigo)",
+        "description": "Histórico: sucesso pelo critério antigo, somente posição horizontal; não comprova contato com a bandeira. Exemplo de tentativa que nao terminou o percurso. Semente 41001: nao concluiu o objetivo. Gravacao real da simulacao, nao Terraria Mobile."
       }
     ]
   },
