@@ -1,5 +1,89 @@
 [
   {
+    "id": "world-pixel-pair-38864206091",
+    "label": "Nível 2 — Memória visual de dois quadros",
+    "metrics": {
+      "Rede original (24 mundos)": 0.4583333333333333,
+      "Quadro duplicado (24 mundos)": 0.3333333333333333,
+      "Anterior + atual (24 mundos)": 0.2916666666666667
+    },
+    "evaluation_note": "Todos os 24 mundos avaliados com contato físico real na bandeira, sem atualização de pesos. Um sucesso e uma falha de cada rede são exemplos selecionados; o método temporal não demonstrou melhora.",
+    "replays": [
+      {
+        "file": "pixel_pair_38864206091_0_duplicate_current_game-42162d13257e7412.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle — 2x imagem atual — Contato na bandeira",
+        "description": "Semente 87001. Jogo 2D simulado, contato real na bandeira. Visao IA mostra dois quadros RGB: anterior/atual ou atual/atual. Amostra selecionada, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "pixel_pair_38864206091_0_duplicate_current_game-42162d13257e7412.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Dois quadros da IA",
+            "file": "pixel_pair_38864206091_0_duplicate_current-f94b6e23e8696560.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "pixel_pair_38864206091_1_duplicate_current_game-862deff45c1a7d18.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Controle — 2x imagem atual — Falha",
+        "description": "Semente 87003. Jogo 2D simulado, contato real na bandeira. Visao IA mostra dois quadros RGB: anterior/atual ou atual/atual. Amostra selecionada, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "pixel_pair_38864206091_1_duplicate_current_game-862deff45c1a7d18.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Dois quadros da IA",
+            "file": "pixel_pair_38864206091_1_duplicate_current-21ef7545aa43c3e3.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "pixel_pair_38864206091_2_previous_current_game-1ec584ea9dccd91a.gif.b64",
+        "encoding": "base64-gif",
+        "label": "IA temporal — anterior + atual — Contato na bandeira",
+        "description": "Semente 87001. Jogo 2D simulado, contato real na bandeira. Visao IA mostra dois quadros RGB: anterior/atual ou atual/atual. Amostra selecionada, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "pixel_pair_38864206091_2_previous_current_game-1ec584ea9dccd91a.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Dois quadros da IA",
+            "file": "pixel_pair_38864206091_2_previous_current-3982c9ffb54eef17.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "pixel_pair_38864206091_3_previous_current_game-da25ac4f350e7157.gif.b64",
+        "encoding": "base64-gif",
+        "label": "IA temporal — anterior + atual — Falha",
+        "description": "Semente 87003. Jogo 2D simulado, contato real na bandeira. Visao IA mostra dois quadros RGB: anterior/atual ou atual/atual. Amostra selecionada, nao Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "pixel_pair_38864206091_3_previous_current_game-da25ac4f350e7157.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Dois quadros da IA",
+            "file": "pixel_pair_38864206091_3_previous_current-c23da146f384d207.gif.b64"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "world-flag-reward-ablation-38859165114",
     "label": "Nível 2 — Recompensa 2D vs controle #38859165114",
     "metrics": {
