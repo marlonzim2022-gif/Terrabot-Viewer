@@ -1,5 +1,125 @@
 [
   {
+    "id": "world-flag-reward-ablation-38859165114",
+    "label": "Nível 2 — Recompensa 2D vs controle #38859165114",
+    "metrics": {
+      "CNN original (24 mundos)": 0.4166666666666667,
+      "Treino com recompensa anterior (24 mundos)": 0.3333333333333333,
+      "Treino com recompensa 2D (24 mundos)": 0.4166666666666667
+    },
+    "evaluation_note": "Comparação A/B, 32 episódios por braço e uma semente de treinamento. Sucesso exige contato real na bandeira. Gravações são exemplos selecionados, não todas as tentativas. Não comprova generalização robusta.",
+    "replays": [
+      {
+        "file": "flag_ablation_38859165114_0_original_game-57d9e3b8cf5042fe.gif.b64",
+        "encoding": "base64-gif",
+        "label": "CNN original — Contato real",
+        "description": "Semente 83001. Exemplo do ensaio A/B com contato real com a bandeira. A política observa apenas o jogo. Resultados exploratórios em 24 cenários, não Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_ablation_38859165114_0_original_game-57d9e3b8cf5042fe.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_ablation_38859165114_0_original-2ca369ef33b4a8dd.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_ablation_38859165114_1_original_game-90d688f3279eb6b7.gif.b64",
+        "encoding": "base64-gif",
+        "label": "CNN original — Falha",
+        "description": "Semente 83002. Exemplo do ensaio A/B com contato real com a bandeira. A política observa apenas o jogo. Resultados exploratórios em 24 cenários, não Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_ablation_38859165114_1_original_game-90d688f3279eb6b7.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_ablation_38859165114_1_original-6b5c9bf1001b319f.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_ablation_38859165114_2_control_game-1ca4f4a6e6a3c934.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Treino com recompensa anterior — Contato real",
+        "description": "Semente 83001. Exemplo do ensaio A/B com contato real com a bandeira. A política observa apenas o jogo. Resultados exploratórios em 24 cenários, não Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_ablation_38859165114_2_control_game-1ca4f4a6e6a3c934.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_ablation_38859165114_2_control-d17c23c22383c64c.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_ablation_38859165114_3_control_game-ba36b88ce6fe1a9f.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Treino com recompensa anterior — Falha",
+        "description": "Semente 83002. Exemplo do ensaio A/B com contato real com a bandeira. A política observa apenas o jogo. Resultados exploratórios em 24 cenários, não Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_ablation_38859165114_3_control_game-ba36b88ce6fe1a9f.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_ablation_38859165114_3_control-0a3b537258dcf6f5.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_ablation_38859165114_4_shaped_game-9ac54a7a6f7643a1.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Treino com recompensa 2D — Contato real",
+        "description": "Semente 83001. Exemplo do ensaio A/B com contato real com a bandeira. A política observa apenas o jogo. Resultados exploratórios em 24 cenários, não Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_ablation_38859165114_4_shaped_game-9ac54a7a6f7643a1.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_ablation_38859165114_4_shaped-1ed5db2442a632f5.gif.b64"
+          }
+        ]
+      },
+      {
+        "file": "flag_ablation_38859165114_5_shaped_game-7bc1f86bef4588d1.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Treino com recompensa 2D — Falha",
+        "description": "Semente 83002. Exemplo do ensaio A/B com contato real com a bandeira. A política observa apenas o jogo. Resultados exploratórios em 24 cenários, não Terraria Mobile.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "flag_ablation_38859165114_5_shaped_game-7bc1f86bef4588d1.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "flag_ablation_38859165114_5_shaped-72341b61fd161fff.gif.b64"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "world-flag-trajectories-38857883789",
     "label": "Nível 2 — Por que falhou na bandeira #38857883789",
     "metrics": {
