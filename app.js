@@ -1,6 +1,8 @@
 "use strict";
 const versionSelect = document.getElementById("version");
 const replaySelect = document.getElementById("replay");
+const viewSelect = document.getElementById("view");
+const viewSwitch = document.getElementById("view-switch");
 const video = document.getElementById("video");
 const empty = document.getElementById("empty");
 const title = document.getElementById("title");
@@ -28,6 +30,8 @@ async function renderReplay() {
   releasePreviousReplay();
   const version = manifest.find(item => item.id === versionSelect.value);
   const replay = version?.replays?.find(item => item.file === replaySelect.value);
+  const selectedView = replay?.views?.find(item => item.id === viewSelect.value);
+  const mediaFile = selectedView?.file || replay?.file;
   video.hidden = true;
   empty.hidden = false;
 
@@ -44,7 +48,7 @@ async function renderReplay() {
   empty.textContent = "Carregando gravação…";
 
   // The manifest is maintained by the publisher, but still validate every path.
-  if (!/^[a-zA-Z0-9][a-zA-Z0-9_.-]*$/.test(replay.file)) {
+  if (!/^[a-zA-Z0-9][a-zA-Z0-9_.-]*$/.test(mediaFile || "")) {
     status.textContent = "Arquivo inválido";
     empty.textContent = "Nome de arquivo de replay inválido.";
     return;
@@ -54,7 +58,7 @@ async function renderReplay() {
     if (request !== loadGeneration) return;
     video.hidden = false;
     empty.hidden = true;
-    status.textContent = "Replay animado";
+    status.textContent = selectedView ? selectedView.label : "Replay animado";
   };
   video.onerror = () => {
     if (request !== loadGeneration) return;
@@ -65,11 +69,11 @@ async function renderReplay() {
   };
 
   try {
-    const url = "media/" + encodeURIComponent(replay.file);
+    const url = "media/" + encodeURIComponent(mediaFile);
     if (replay.encoding === "base64-gif") {
       // GitHub text-only uploads are used to deliver safe, approved GIF bytes
       // without exposing model checkpoints or requiring a private account.
-      if (!replay.file.endsWith(".gif.b64")) throw Error("Expected GIF base64 file");
+      if (!mediaFile.endsWith(".gif.b64")) throw Error("Expected GIF base64 file");
       const response = await fetch(url, {cache: "no-store"});
       if (!response.ok) throw Error("GIF base64 missing");
       const encoded = (await response.text()).replace(/\s+/g, "");
@@ -83,7 +87,7 @@ async function renderReplay() {
       if (request !== loadGeneration) return;
       activeBlobUrl = URL.createObjectURL(new Blob([bytes], {type: "image/gif"}));
       video.src = activeBlobUrl;
-    } else if (!replay.encoding && replay.file.endsWith(".gif")) {
+    } else if (!replay.encoding && mediaFile.endsWith(".gif")) {
       video.src = url; // Existing PixelWorld animations remain unchanged.
     } else {
       throw Error("Unsupported replay encoding");
@@ -95,6 +99,22 @@ async function renderReplay() {
     empty.textContent = "A gravação ainda não está disponível.";
     status.textContent = "Gravação indisponível";
   }
+}
+
+function renderViews() {
+  const version = manifest.find(item => item.id === versionSelect.value);
+  const replay = version?.replays?.find(item => item.file === replaySelect.value);
+  const views = Array.isArray(replay?.views) ? replay.views : [];
+  viewSelect.replaceChildren();
+  viewSwitch.hidden = views.length < 2;
+  for (const view of views) {
+    if (typeof view.id !== "string" || typeof view.file !== "string") continue;
+    const option = document.createElement("option");
+    option.value = view.id;
+    option.textContent = view.label || view.id;
+    viewSelect.append(option);
+  }
+  if (views.some(view => view.id === "game")) viewSelect.value = "game";
 }
 
 function renderVersion() {
@@ -119,6 +139,7 @@ function renderVersion() {
   }
   evaluationNote.textContent = version?.evaluation_note ||
     "Taxas calculadas por avaliação independente; os GIFs são exemplos individuais.";
+  renderViews();
   renderReplay();
 }
 
@@ -135,7 +156,8 @@ async function init() {
       versionSelect.append(option);
     }
     versionSelect.addEventListener("change", renderVersion);
-    replaySelect.addEventListener("change", renderReplay);
+    replaySelect.addEventListener("change", () => { renderViews(); renderReplay(); });
+    viewSelect.addEventListener("change", renderReplay);
     renderVersion();
   } catch (_) {
     empty.hidden = false;
