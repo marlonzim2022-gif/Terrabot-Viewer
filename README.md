@@ -1,5 +1,38 @@
 # Terrabot Viewer
 
+## Histórico e resultados por execução
+
+Esta interface também aceita o contrato opcional `terrabot-run-v1`: estados de
+treinamento/avaliação/gravação/publicação, contagens completas, configuração,
+critério e identidade pública do modelo. Zero vitórias é um resultado válido;
+uma execução falha pode aparecer sem GIF. Entradas anteriores continuam
+inalteradas e são identificadas como históricas, sem preencher dados ausentes
+retroativamente.
+
+O botão **Atualizar catálogo** permite tentar novamente após falha de conexão.
+**Link desta execução** preserva experimento, gravação, visão e comparação na
+URL. **Comparar resultados** avisa quando configurações ou critérios são
+diferentes/desconhecidos: números isolados não demonstram ganho de aprendizado.
+
+Nas gravações com duas visões, ambas correspondem ao mesmo episódio/decisões.
+Trocar a visão reinicia o GIF; não há cursor sincronizado ou transmissão ao vivo.
+Uma tentativa selecionada não substitui a taxa da avaliação completa.
+
+Resultados novos podem incluir `receipts/<ID>.json`, uma prova pública mínima
+gerada após verificar Pages e arquivos. A interface só mostra **Verificada**
+quando a prova é válida; caso contrário informa confirmação pendente. Nenhuma
+credencial ou log privado é necessário para abrir o site.
+
+Os workflows/testes desta PR não publicam experiências sintéticas. O catálogo
+`manifest.json` e `media/**` existentes não foram alterados.
+
+Testes locais: `python -m pip install playwright==1.62.0`, instalar Chromium via
+`python -m playwright install chromium` e executar
+`python -m unittest discover -s tests -v`. Oito testes de navegador cobrem
+compatibilidade, duas visões/chunks, 0%, falhas, links, atualização, comparação,
+provas inválidas e largura de celular/desktop. Os catálogos sintéticos são
+interceptados localmente pelo teste, sem escrever no catálogo real.
+
 **Assistir pelo navegador:** https://marlonzim2022-gif.github.io/Terrabot-Viewer/
 
 Visualizador público de animações reais de execução de políticas treinadas
