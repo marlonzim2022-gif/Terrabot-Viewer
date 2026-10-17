@@ -184,7 +184,7 @@ class ViewerTests(unittest.TestCase):
         self.page.wait_for_function("document.querySelector('#research-status').textContent.includes('não pôde ser atualizado')")
         self.assertEqual(self.page.locator('#research-list .research-entry').count(),2)
         self.assertTrue(self.page.locator('#research-list a[href*="experiment=v9"]').count())
-        self.assertTrue(self.page.locator('#video').is_visible())
+        self.page.locator('#video').wait_for(state='visible')
 
     def test_research_history_escapes_untrusted_labels_on_mobile(self):
         self.research_data['entries'][0]['title']='<img src=x onerror="window.bad=1">'
