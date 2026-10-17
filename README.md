@@ -1,5 +1,40 @@
 # Terrabot Viewer
 
+## Histórico dos experimentos: observação antes de alterar o agente
+
+O catálogo de replays `manifest.json` continua sendo a fonte para a mídia realmente
+publicada. O arquivo `research-index.json` é um **índice público curado** de
+etapas, incluindo auditorias e experimentos privados sem GIF público. A
+linha do tempo usa esse índice e acrescenta automaticamente gravações futuras
+aprovadas que entrem no `manifest.json`. Não há acesso a checkpoints privados
+nem busca de resultados diretamente do repositório privado no navegador.
+
+- **Com replay público** significa que existe no catálogo um GIF de avaliação
+  associado; não significa que a rede aprendeu a tarefa ou que o vídeo mostre
+  todo o treinamento.
+- **Sem replay público** significa apenas que não existe uma gravação aprovada
+  no Viewer; não implica que nenhum arquivo tenha sido gravado em privado.
+- **Auditoria/validação** não é rotulada como treinamento e nunca recebe uma
+  vitória presumida. A 3A15 publica vídeos da 3A14; não é uma nova CNN.
+
+Para registrar uma nova etapa, somente metadados de divulgação aprovados
+(`stage`, `kind`, `title`, `occurred_at`, `summary`, `replay_ids`,
+`replay_note`, `source_url`) entram em `research-index.json`, por PR
+revisada. Nunca copiar seeds reservadas, pesos, configurações confidenciais,
+artefatos privados ou o conteúdo de logs não revisados. Links técnicos
+apontam para o GitHub privado e podem exigir permissão.
+
+Nos próximos **experimentos comportamentais**, a gravação da avaliação
+congelada deve ser planejada junto ao experimento: pelo menos um episódio
+real representativo (inclusive falhas quando existirem), com vista do jogo
+e RGB da IA no mesmo episódio. A gravação pública somente é publicada
+depois das validações, nunca a partir de material privado automaticamente.
+Experimentos que apenas testam física e infraestrutura podem ficar sem GIF,
+mas devem permanecer visíveis no histórico. Esta PR **não inicia treino,
+não regrava experiências antigas e não liga publicação automática de
+pesquisa privada**.
+
+
 ## Histórico e resultados por execução
 
 Esta interface também aceita o contrato opcional `terrabot-run-v1`: estados de
