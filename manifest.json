@@ -1,5 +1,631 @@
 [
   {
+    "id": "tw-39043759629-1",
+    "label": "3A20 - Piloto de 4 videos reais no Viewer · tw-39043759629-1",
+    "metrics": {
+      "Avaliação holdout": 0.0
+    },
+    "evaluation_note": "Replay de avaliação, não transmissão ao vivo. Tentativas incompletas não são contadas como derrotas. Confira os estados das etapas.",
+    "replays": [
+      {
+        "file": "training-episode-0-game-aab337aa6f4e9249.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Durante o treinamento · não concluiu",
+        "description": "Captura do episódio real enquanto a política treinava. O jogo mostra cenário e ação; a IA recebe apenas RGB 84×84.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "training-episode-0-game-aab337aa6f4e9249.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "training-episode-0-ai-25d86ed43c54c13c.gif.b64"
+          }
+        ],
+        "episode": 0,
+        "seed": 101,
+        "success": false,
+        "capture_kind": "training",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "bf8bfcba847c4b89873799949f4b4fc605e729d2abd0be95b655015194f8963e"
+          },
+          {
+            "decision": 1,
+            "action": 3,
+            "observation_sha256": "4b93f36dc7ceffe7f6db5ee138e91ccb3ab229d031741de57e4f1a78d8c33b19"
+          },
+          {
+            "decision": 2,
+            "action": 4,
+            "observation_sha256": "0a0f23fab70e198602542329e4ce782680cc5f5ace79d124b210b3681fc3c7ac"
+          },
+          {
+            "decision": 3,
+            "action": 2,
+            "observation_sha256": "c4b4e354c5a664474dc278b264243c7f7fb9ce26c4043c0974ea84dd6aa6bf5f"
+          },
+          {
+            "decision": 4,
+            "action": 2,
+            "observation_sha256": "9303e416ed72b9d96bf99b40e6eaf4298a0d29523818d190083d2793bc36d1c1"
+          },
+          {
+            "decision": 5,
+            "action": 1,
+            "observation_sha256": "55dcc8d7bdba7cae051371444745cf87c952ef9fde7449afd19fb96f4cc507bb"
+          },
+          {
+            "decision": 6,
+            "action": 2,
+            "observation_sha256": "11aab73dd5b01b01e30056101c610e2fa7324d9dc43fcda40713b1aa5f2e7485"
+          },
+          {
+            "decision": 7,
+            "action": 0,
+            "observation_sha256": "4563ca99021e16f5210fbcc5f59104a004c5fe36b5f5bec38953da0bae24d274"
+          },
+          {
+            "decision": 8,
+            "action": 2,
+            "observation_sha256": "f81b0e21340f03ba17aa1176cbf8d464432c22815a3e99abeebff690a01dcce2"
+          },
+          {
+            "decision": 9,
+            "action": 4,
+            "observation_sha256": "ab291531d0fbe6bb508c7f9f28f685b25886416021860d85f827f15f6f0f412c"
+          },
+          {
+            "decision": 10,
+            "action": 4,
+            "observation_sha256": "542e457ffd9c86267ecbdc80db8ed4ba0f13899ce71c7df7a4edeaf688310f6b"
+          },
+          {
+            "decision": 11,
+            "action": 2,
+            "observation_sha256": "a90fd292927d1515005e7716dcdff233e12633e8e541f9a1333ae2a778981c3b"
+          },
+          {
+            "decision": 12,
+            "action": 0,
+            "observation_sha256": "d8e034791c9f7816e922905f9afcacb2e02977673d240ba5a760dda5bceaee6f"
+          },
+          {
+            "decision": 13,
+            "action": 5,
+            "observation_sha256": "485004a531590ff3e00b7945e00cf280a7535fb27180f3dff17cae4c553b99de"
+          },
+          {
+            "decision": 14,
+            "action": 4,
+            "observation_sha256": "3ec4fc549bc89f1fd1135be77bd4c24c4f18c69ad74d1709fe4a172f80c854ef"
+          },
+          {
+            "decision": 15,
+            "action": 3,
+            "observation_sha256": "dd0cf86188e8f974d2c60130973ded6455ba857d9e4bb640c87d8d400c2b6969"
+          },
+          {
+            "decision": 16,
+            "action": 5,
+            "observation_sha256": "eec34abcaa3c2fc48485997249a51bfb377841745034e41bcb1df826d40bb9dd"
+          },
+          {
+            "decision": 17,
+            "action": 2,
+            "observation_sha256": "8e2d4e731d47b781f44273afe3036a9f9e67ea5af1208af0823ee38a18fd6d3e"
+          },
+          {
+            "decision": 18,
+            "action": 5,
+            "observation_sha256": "1b6a7c7354390651902acd52664f6d708ec0cae3dd85a2c949769ce416a40eac"
+          },
+          {
+            "decision": 19,
+            "action": 1,
+            "observation_sha256": "ecfdc4ff938cc74bb898213e04ef8a7f899e47a040544a8534699ee57f0ec388"
+          },
+          {
+            "decision": 20,
+            "action": 1,
+            "observation_sha256": "2300eb8790df207a619cd4b7d22181005408164bfdb0d58c487e753c96050aaa"
+          }
+        ]
+      },
+      {
+        "file": "seen-episode-0-game-0a4bd47e0f499828.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Cenário de treinamento · avaliação congelada · não concluiu",
+        "description": "Duas visões da mesma avaliação, sem atualização de pesos. A IA recebe somente RGB 84×84; o jogo mostra cenário e ação.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "seen-episode-0-game-0a4bd47e0f499828.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "seen-episode-0-ai-94d0002c927b7927.gif.b64"
+          }
+        ],
+        "episode": 0,
+        "seed": 101,
+        "success": false,
+        "capture_kind": "evaluation",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "bf8bfcba847c4b89873799949f4b4fc605e729d2abd0be95b655015194f8963e"
+          },
+          {
+            "decision": 1,
+            "action": 5,
+            "observation_sha256": "44bb7b34cdbee8bfc9f21cdd468ad8e8ee2fee7933934cd86ae43d01e9efc116"
+          },
+          {
+            "decision": 2,
+            "action": 5,
+            "observation_sha256": "789b21d9d2c01b62484e1427eac5a3b4228619897aa6f26d7a0a2a81b3085251"
+          },
+          {
+            "decision": 3,
+            "action": 5,
+            "observation_sha256": "8a5ecc339cb0beb8cf047b5c7aea26ef5e6db1016f72ddfb9cdba2f0586ad65d"
+          },
+          {
+            "decision": 4,
+            "action": 5,
+            "observation_sha256": "31dc7c671ecc80556460884f7d8f8ce66ee8908d65356b6fcd20d4a49bb1fc5c"
+          },
+          {
+            "decision": 5,
+            "action": 5,
+            "observation_sha256": "7203479d78540193ae36b00bf0a6ec04c4d91d9a36b8d7a17360517895bc962c"
+          },
+          {
+            "decision": 6,
+            "action": 5,
+            "observation_sha256": "768296fe89efc4eb22520348a299ef5d81e46d397792ff80d73d0a5486ad340a"
+          },
+          {
+            "decision": 7,
+            "action": 5,
+            "observation_sha256": "e4ddd337c08d83c2b985dfc677726c426426dcf4d6e4aef44226842423c2d10c"
+          },
+          {
+            "decision": 8,
+            "action": 5,
+            "observation_sha256": "b2939327eb45cb5b096a274f2424accdc6f03053f6b6a5158402d7d478cb7f98"
+          },
+          {
+            "decision": 9,
+            "action": 5,
+            "observation_sha256": "ee0d77106b94c8a24ca7b0c9ba392bde3edb526440f8a849bc8541ba6e47655e"
+          },
+          {
+            "decision": 10,
+            "action": 5,
+            "observation_sha256": "bda96884de9a754e3d83a8792c9714272ff6a4c196c8d02fac4811a39061b4ed"
+          },
+          {
+            "decision": 11,
+            "action": 5,
+            "observation_sha256": "2d6b10165080066c18d5c4addfd07442836dbdf58db28b3adaf2dc26f43ba9ee"
+          },
+          {
+            "decision": 12,
+            "action": 5,
+            "observation_sha256": "4dd1e309f9ebe8613473a62e1e0f4025816a556d943de8c3e3e73921a5730264"
+          },
+          {
+            "decision": 13,
+            "action": 5,
+            "observation_sha256": "36a3bee2894c85ec5c7cd9f273edee3ca5e4ad61360a62254551ac3164c6b55f"
+          },
+          {
+            "decision": 14,
+            "action": 5,
+            "observation_sha256": "271049913a6f1e9888b720c39b68eda3ce881954fb727fbec345e00e0ab2dafb"
+          },
+          {
+            "decision": 15,
+            "action": 5,
+            "observation_sha256": "85a967f6c6f63c6bc3f4afef272e95de32d395fd4336fdfaeafecf4340ef3482"
+          },
+          {
+            "decision": 16,
+            "action": 5,
+            "observation_sha256": "5a3af7c7defa11e9dcbd80e30610d3d5d7981875611126445212e3b1e0f499c1"
+          },
+          {
+            "decision": 17,
+            "action": 5,
+            "observation_sha256": "99a4853f7df8d3540ad276a5a67837700283a4b96232dbc44337832af0160726"
+          },
+          {
+            "decision": 18,
+            "action": 5,
+            "observation_sha256": "801f245437b39fa4b2c34235f39da160c612480a5a7a6ff33d213f02cd1eb04a"
+          },
+          {
+            "decision": 19,
+            "action": 5,
+            "observation_sha256": "68534f19fbdeacbbbc20f526524400c2fb577edc95d6cc7dc3f0e99b1bb7f725"
+          },
+          {
+            "decision": 20,
+            "action": 5,
+            "observation_sha256": "0bc1b6903b316b1f0524b1ed138b114260256bf5ed59a1d0263174bbc9221f6e"
+          }
+        ]
+      },
+      {
+        "file": "holdout-episode-0-game-d0117243dd5e1df4.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Cenário inédito · avaliação congelada · não concluiu",
+        "description": "Duas visões da mesma avaliação, sem atualização de pesos. A IA recebe somente RGB 84×84; o jogo mostra cenário e ação.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "holdout-episode-0-game-d0117243dd5e1df4.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "holdout-episode-0-ai-2faed844d2ccbfb7.gif.b64"
+          }
+        ],
+        "episode": 0,
+        "seed": 9001,
+        "success": false,
+        "capture_kind": "evaluation",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "2b61dd8dd468b686c127511038e1890605eba0629fd984bc4b2b311e3d5ccfbb"
+          },
+          {
+            "decision": 1,
+            "action": 5,
+            "observation_sha256": "37cba74e5c856a787c9a316e6cf8f8a659ed19fe6cd333613b200e51e8a79c44"
+          },
+          {
+            "decision": 2,
+            "action": 5,
+            "observation_sha256": "40658640c19556833724b0a0f3fb5c1f6d0148189b0fa26265bb578689860b26"
+          },
+          {
+            "decision": 3,
+            "action": 5,
+            "observation_sha256": "38536dda36adbedec1ccd47f19e0adeee2e843fef37a749296a9d5760c94934d"
+          },
+          {
+            "decision": 4,
+            "action": 5,
+            "observation_sha256": "7435217c0793544d94efd673dcfeb2daea9e070e1cecb9e7398d490976ab5450"
+          },
+          {
+            "decision": 5,
+            "action": 5,
+            "observation_sha256": "ed84d15c1e1a4bef09e3797ef65a30bfd3797a63fcccfe4ea4c7d5aa1c58b3c8"
+          },
+          {
+            "decision": 6,
+            "action": 5,
+            "observation_sha256": "a9dd00488224df2bbe4dbfcfd68fac244805882e313e5ecfd0254936c7dc8a93"
+          },
+          {
+            "decision": 7,
+            "action": 5,
+            "observation_sha256": "e4ddd337c08d83c2b985dfc677726c426426dcf4d6e4aef44226842423c2d10c"
+          },
+          {
+            "decision": 8,
+            "action": 5,
+            "observation_sha256": "b2939327eb45cb5b096a274f2424accdc6f03053f6b6a5158402d7d478cb7f98"
+          },
+          {
+            "decision": 9,
+            "action": 5,
+            "observation_sha256": "ee0d77106b94c8a24ca7b0c9ba392bde3edb526440f8a849bc8541ba6e47655e"
+          },
+          {
+            "decision": 10,
+            "action": 5,
+            "observation_sha256": "bda96884de9a754e3d83a8792c9714272ff6a4c196c8d02fac4811a39061b4ed"
+          },
+          {
+            "decision": 11,
+            "action": 5,
+            "observation_sha256": "2d6b10165080066c18d5c4addfd07442836dbdf58db28b3adaf2dc26f43ba9ee"
+          },
+          {
+            "decision": 12,
+            "action": 5,
+            "observation_sha256": "4dd1e309f9ebe8613473a62e1e0f4025816a556d943de8c3e3e73921a5730264"
+          },
+          {
+            "decision": 13,
+            "action": 5,
+            "observation_sha256": "36a3bee2894c85ec5c7cd9f273edee3ca5e4ad61360a62254551ac3164c6b55f"
+          },
+          {
+            "decision": 14,
+            "action": 5,
+            "observation_sha256": "271049913a6f1e9888b720c39b68eda3ce881954fb727fbec345e00e0ab2dafb"
+          },
+          {
+            "decision": 15,
+            "action": 5,
+            "observation_sha256": "85a967f6c6f63c6bc3f4afef272e95de32d395fd4336fdfaeafecf4340ef3482"
+          },
+          {
+            "decision": 16,
+            "action": 5,
+            "observation_sha256": "5a3af7c7defa11e9dcbd80e30610d3d5d7981875611126445212e3b1e0f499c1"
+          },
+          {
+            "decision": 17,
+            "action": 5,
+            "observation_sha256": "99a4853f7df8d3540ad276a5a67837700283a4b96232dbc44337832af0160726"
+          },
+          {
+            "decision": 18,
+            "action": 5,
+            "observation_sha256": "801f245437b39fa4b2c34235f39da160c612480a5a7a6ff33d213f02cd1eb04a"
+          },
+          {
+            "decision": 19,
+            "action": 5,
+            "observation_sha256": "68534f19fbdeacbbbc20f526524400c2fb577edc95d6cc7dc3f0e99b1bb7f725"
+          },
+          {
+            "decision": 20,
+            "action": 5,
+            "observation_sha256": "0bc1b6903b316b1f0524b1ed138b114260256bf5ed59a1d0263174bbc9221f6e"
+          }
+        ]
+      },
+      {
+        "file": "holdout-episode-1-game-618f7dcb0df60dcc.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Cenário inédito · avaliação congelada · não concluiu",
+        "description": "Duas visões da mesma avaliação, sem atualização de pesos. A IA recebe somente RGB 84×84; o jogo mostra cenário e ação.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "holdout-episode-1-game-618f7dcb0df60dcc.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "holdout-episode-1-ai-154ee501a3134bab.gif.b64"
+          }
+        ],
+        "episode": 1,
+        "seed": 9002,
+        "success": false,
+        "capture_kind": "evaluation",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "0f9927268fd22312645b06964d1b4905a0e79d665c3038b067a29de201e6478a"
+          },
+          {
+            "decision": 1,
+            "action": 5,
+            "observation_sha256": "ee8a488295a50b4cc6319bb79b4b7a8f257020cb51559ef1c63995ec08ff0f29"
+          },
+          {
+            "decision": 2,
+            "action": 5,
+            "observation_sha256": "448ffd90cf98b069e33492346534ebd619b3ad25462b4636eb093fec11a7e757"
+          },
+          {
+            "decision": 3,
+            "action": 5,
+            "observation_sha256": "28722037d8d48b31a48ded2e478eff9364fb6771f2e7e6fad7a0bdaa92a4c61a"
+          },
+          {
+            "decision": 4,
+            "action": 5,
+            "observation_sha256": "408189a929830575de0ac95f890c25da106bd44b1801ea0022db0395e7114622"
+          },
+          {
+            "decision": 5,
+            "action": 5,
+            "observation_sha256": "31c26534eef56667c381349100dfcd64b2ed901aa9505cfaf0ce613de5c594db"
+          },
+          {
+            "decision": 6,
+            "action": 5,
+            "observation_sha256": "4b3c0814b1623ed439d742e952cf3c8e977810d5b037a334558e2d67319d4a33"
+          },
+          {
+            "decision": 7,
+            "action": 5,
+            "observation_sha256": "e4ddd337c08d83c2b985dfc677726c426426dcf4d6e4aef44226842423c2d10c"
+          },
+          {
+            "decision": 8,
+            "action": 5,
+            "observation_sha256": "b2939327eb45cb5b096a274f2424accdc6f03053f6b6a5158402d7d478cb7f98"
+          },
+          {
+            "decision": 9,
+            "action": 5,
+            "observation_sha256": "ee0d77106b94c8a24ca7b0c9ba392bde3edb526440f8a849bc8541ba6e47655e"
+          },
+          {
+            "decision": 10,
+            "action": 5,
+            "observation_sha256": "9fbec3778113d7063340156658076f1227a14e6310e55d4b634f50c943cddb78"
+          },
+          {
+            "decision": 11,
+            "action": 5,
+            "observation_sha256": "2d6b10165080066c18d5c4addfd07442836dbdf58db28b3adaf2dc26f43ba9ee"
+          },
+          {
+            "decision": 12,
+            "action": 5,
+            "observation_sha256": "4dd1e309f9ebe8613473a62e1e0f4025816a556d943de8c3e3e73921a5730264"
+          },
+          {
+            "decision": 13,
+            "action": 5,
+            "observation_sha256": "36a3bee2894c85ec5c7cd9f273edee3ca5e4ad61360a62254551ac3164c6b55f"
+          },
+          {
+            "decision": 14,
+            "action": 5,
+            "observation_sha256": "271049913a6f1e9888b720c39b68eda3ce881954fb727fbec345e00e0ab2dafb"
+          },
+          {
+            "decision": 15,
+            "action": 5,
+            "observation_sha256": "85a967f6c6f63c6bc3f4afef272e95de32d395fd4336fdfaeafecf4340ef3482"
+          },
+          {
+            "decision": 16,
+            "action": 5,
+            "observation_sha256": "5a3af7c7defa11e9dcbd80e30610d3d5d7981875611126445212e3b1e0f499c1"
+          },
+          {
+            "decision": 17,
+            "action": 5,
+            "observation_sha256": "99a4853f7df8d3540ad276a5a67837700283a4b96232dbc44337832af0160726"
+          },
+          {
+            "decision": 18,
+            "action": 5,
+            "observation_sha256": "801f245437b39fa4b2c34235f39da160c612480a5a7a6ff33d213f02cd1eb04a"
+          },
+          {
+            "decision": 19,
+            "action": 5,
+            "observation_sha256": "68534f19fbdeacbbbc20f526524400c2fb577edc95d6cc7dc3f0e99b1bb7f725"
+          },
+          {
+            "decision": 20,
+            "action": 5,
+            "observation_sha256": "0bc1b6903b316b1f0524b1ed138b114260256bf5ed59a1d0263174bbc9221f6e"
+          }
+        ]
+      }
+    ],
+    "run": {
+      "schema": "terrabot-run-v1",
+      "id": "tw-39043759629-1",
+      "created_at": "2026-10-17T15:08:52.388042+00:00",
+      "code": {
+        "version": "3A20 - Piloto de 4 videos reais no Viewer",
+        "commit": "fab44cdcff1b0c7e97a59a00e4ec1aaa0f085c0a",
+        "dirty": false,
+        "source_sha256": "bf4c59176bfb4b6afed763a6646ae8a3bb8f3a6a7d991a96d482b0ce8abcec69"
+      },
+      "model": {
+        "format": "terrabot-training-world-ddqn-v1",
+        "sha256": "985ef6d8fdf65ba309b82cb3126c0b244bf026cbd0069ba81dd60ec93a96026e"
+      },
+      "config": {
+        "episodes": 1,
+        "task_id": 1,
+        "frames_per_step": 3,
+        "max_decisions": 20,
+        "evaluation_episodes": 2,
+        "seed": 0,
+        "batch_size": 16,
+        "replay_capacity": 64,
+        "train_seeds": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          201,
+          202,
+          203,
+          301,
+          302,
+          401,
+          501
+        ],
+        "holdout_seeds": [
+          9001,
+          9002,
+          9003,
+          9004,
+          9005,
+          9999,
+          8888,
+          7777
+        ],
+        "mode": "fresh"
+      },
+      "goal_criterion": "flag-contact-v1",
+      "episodes": {
+        "training": {
+          "completed": 1,
+          "wins": 0,
+          "losses": 1,
+          "endings": {
+            "win": 0,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 1,
+            "other": 0
+          }
+        },
+        "evaluation": {
+          "completed": 2,
+          "wins": 0,
+          "losses": 2,
+          "endings": {
+            "win": 0,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 2,
+            "other": 0
+          }
+        }
+      },
+      "stages": {
+        "training": {
+          "state": "succeeded",
+          "code": null
+        },
+        "evaluation": {
+          "state": "succeeded",
+          "code": null
+        },
+        "recording": {
+          "state": "succeeded",
+          "code": null
+        },
+        "publication": {
+          "state": "submitted",
+          "code": null
+        }
+      },
+      "errors": []
+    }
+  },
+  {
     "id": "tw-39040275408-1",
     "label": "3A19 - Replay diagnostico CNN 3A3 no mundo corrigido · tw-39040275408-1",
     "metrics": {
