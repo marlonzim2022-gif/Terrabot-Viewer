@@ -4,7 +4,7 @@
   "entries": [
     {
       "stage": "3A19",
-      "kind": "publicacao",
+      "kind": "avaliacao",
       "title": "Stage 3A19 frozen visual evaluation replay (no training)",
       "occurred_at": "2026-10-17T14:19:48Z",
       "status": "concluido",
