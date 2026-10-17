@@ -1,5 +1,452 @@
 [
   {
+    "id": "tw-39040275408-1",
+    "label": "3A19 - Replay diagnostico CNN 3A3 no mundo corrigido · tw-39040275408-1",
+    "metrics": {
+      "Avaliação holdout": 1.0
+    },
+    "evaluation_note": "Replay de avaliação, não transmissão ao vivo. Tentativas incompletas não são contadas como derrotas. Confira os estados das etapas.",
+    "replays": [
+      {
+        "file": "episode-0-game-e1bd2626b8e01eba.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Diagnostico visual - tocou a bandeira",
+        "description": "Modelo historico 3A3 congelado no cenario atual corrigido. Uma amostra visual do episodio: nao e novo treinamento, nem comparacao cientifica com as taxas antigas.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "episode-0-game-e1bd2626b8e01eba.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "episode-0-ai-52692afe3ad19dc7.gif.b64"
+          }
+        ],
+        "episode": 0,
+        "seed": 1801260401,
+        "success": true,
+        "capture_kind": "evaluation",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "54c719aa8c54cb20b2d32c12a0118fbc808b175a0e33407ec7b5f38f641cb461"
+          },
+          {
+            "decision": 1,
+            "action": 2,
+            "observation_sha256": "e774d4fa97a984684233f5a8965e8be0d34af295703fe5b809af81013fe012db"
+          },
+          {
+            "decision": 2,
+            "action": 2,
+            "observation_sha256": "87ee6b4b1e662f82abd44fcfbfe24d9bfc8a0cfb00569c5b380bbe521bf37861"
+          },
+          {
+            "decision": 3,
+            "action": 2,
+            "observation_sha256": "a3fb33c774a58574a5f617adb7734226e92bda713e4af61e45fc108dc0a93249"
+          },
+          {
+            "decision": 4,
+            "action": 2,
+            "observation_sha256": "f51c32c756230210a47adf04b84fb78ed921b28ca3b26517e21ec3c29a3b20a4"
+          },
+          {
+            "decision": 5,
+            "action": 2,
+            "observation_sha256": "3d1936fc359baa2cfdc0cf98f0be942408ec444ee1cd2bdf6d7f79e34e972f68"
+          },
+          {
+            "decision": 6,
+            "action": 2,
+            "observation_sha256": "4d6403aecda6dcae7f025bf45807c71300e626e21a06d9247bc9b343f73b1e66"
+          },
+          {
+            "decision": 7,
+            "action": 2,
+            "observation_sha256": "8cc71d406d1dc0fe7f7e8a0d9f2675b09a09f13e683854e779ea217b5bdaef43"
+          },
+          {
+            "decision": 8,
+            "action": 2,
+            "observation_sha256": "f6f060fae684a68b4e780ae79d74a5ad6d2dff02f27ad28c4ccba3de37e3976d"
+          },
+          {
+            "decision": 9,
+            "action": 2,
+            "observation_sha256": "d4824ac460e91ee4f83722bf7423d562b9c7d20e9d6277cfbdfdc654b895e48f"
+          },
+          {
+            "decision": 10,
+            "action": 2,
+            "observation_sha256": "d764985d205cf2591b1369ffd7cbe5505a17103e77c64eb6c48a450129e427dc"
+          },
+          {
+            "decision": 11,
+            "action": 2,
+            "observation_sha256": "b00e29bf20f0e859ff40350f379fb482e867206d6af17fd0d6d7bc5470b993e4"
+          },
+          {
+            "decision": 12,
+            "action": 2,
+            "observation_sha256": "8cc71d406d1dc0fe7f7e8a0d9f2675b09a09f13e683854e779ea217b5bdaef43"
+          },
+          {
+            "decision": 13,
+            "action": 2,
+            "observation_sha256": "f6f060fae684a68b4e780ae79d74a5ad6d2dff02f27ad28c4ccba3de37e3976d"
+          },
+          {
+            "decision": 14,
+            "action": 2,
+            "observation_sha256": "d4824ac460e91ee4f83722bf7423d562b9c7d20e9d6277cfbdfdc654b895e48f"
+          },
+          {
+            "decision": 15,
+            "action": 2,
+            "observation_sha256": "d764985d205cf2591b1369ffd7cbe5505a17103e77c64eb6c48a450129e427dc"
+          },
+          {
+            "decision": 16,
+            "action": 2,
+            "observation_sha256": "11e294d6c926ba26f18b76852cdc956fc9042e2c1ca8e1f5e32bbcbf71ffbcdf"
+          },
+          {
+            "decision": 17,
+            "action": 2,
+            "observation_sha256": "8cc71d406d1dc0fe7f7e8a0d9f2675b09a09f13e683854e779ea217b5bdaef43"
+          },
+          {
+            "decision": 18,
+            "action": 2,
+            "observation_sha256": "f6f060fae684a68b4e780ae79d74a5ad6d2dff02f27ad28c4ccba3de37e3976d"
+          },
+          {
+            "decision": 19,
+            "action": 2,
+            "observation_sha256": "d4824ac460e91ee4f83722bf7423d562b9c7d20e9d6277cfbdfdc654b895e48f"
+          },
+          {
+            "decision": 20,
+            "action": 2,
+            "observation_sha256": "d764985d205cf2591b1369ffd7cbe5505a17103e77c64eb6c48a450129e427dc"
+          },
+          {
+            "decision": 21,
+            "action": 2,
+            "observation_sha256": "11e294d6c926ba26f18b76852cdc956fc9042e2c1ca8e1f5e32bbcbf71ffbcdf"
+          },
+          {
+            "decision": 22,
+            "action": 2,
+            "observation_sha256": "f859c63a489051fdc962814c577d3a2cc4bd3864f2e508a61df6299c65445b8e"
+          },
+          {
+            "decision": 23,
+            "action": 2,
+            "observation_sha256": "216d88dc946027b85a654b080fe988f9c1d094aa8722cc094b91a413bf47148b"
+          },
+          {
+            "decision": 24,
+            "action": 2,
+            "observation_sha256": "8ccf812e49b5b908956af7bc7e028aa60c42531b872b4be23bbb50ad2a2f0d22"
+          },
+          {
+            "decision": 25,
+            "action": 2,
+            "observation_sha256": "bfca2a4ea4a3f3734f9e82066826900dbf85a986c9a7f05872e6d626ccbe0a16"
+          },
+          {
+            "decision": 26,
+            "action": 2,
+            "observation_sha256": "ec62d56fd70801e5e62f7e84e4541ec05afe76256cea22914994a522002c8097"
+          },
+          {
+            "decision": 27,
+            "action": 2,
+            "observation_sha256": "dc5f917521f93fe629897ba337e04a381e78bdd21048062b493eadc1f60b75c8"
+          },
+          {
+            "decision": 28,
+            "action": 2,
+            "observation_sha256": "c3230fb719ab653f959f468e8ef35485235b597254646392084a1a740924305a"
+          },
+          {
+            "decision": 29,
+            "action": 2,
+            "observation_sha256": "26181340811a0f50d68ef004473752931eaff46690c4eda1cc17122eee07e8a1"
+          },
+          {
+            "decision": 30,
+            "action": 2,
+            "observation_sha256": "72c2ce88620db9fe948afd49ee800904feee92cda92d5c0e6db92a81f7c65ac6"
+          }
+        ]
+      },
+      {
+        "file": "episode-1-game-4817ee16635ee892.gif.b64",
+        "encoding": "base64-gif",
+        "label": "Diagnostico visual - tocou a bandeira",
+        "description": "Modelo historico 3A3 congelado no cenario atual corrigido. Uma amostra visual do episodio: nao e novo treinamento, nem comparacao cientifica com as taxas antigas.",
+        "views": [
+          {
+            "id": "game",
+            "label": "Visão do jogo",
+            "file": "episode-1-game-4817ee16635ee892.gif.b64"
+          },
+          {
+            "id": "ai",
+            "label": "Visão da IA",
+            "file": "episode-1-ai-3a257926bb4c0ab4.gif.b64"
+          }
+        ],
+        "episode": 1,
+        "seed": 1801260402,
+        "success": true,
+        "capture_kind": "evaluation",
+        "frame_duration_ms": 50,
+        "timeline": [
+          {
+            "decision": 0,
+            "action": null,
+            "observation_sha256": "853caa678cec53291a07d4ac4837964258f0c2497a166fdba41c006e58a9c143"
+          },
+          {
+            "decision": 1,
+            "action": 2,
+            "observation_sha256": "b5b11ff62ccad223b53c23112f7e5e151e6320fcfe3a4be312bc7fa624f160a2"
+          },
+          {
+            "decision": 2,
+            "action": 2,
+            "observation_sha256": "dd3f4d004a14d098e462b6325ad4bfb2a5f9b87d707f76083ece7c47d646a466"
+          },
+          {
+            "decision": 3,
+            "action": 2,
+            "observation_sha256": "d0318139a0262ac21f1134bae26fbdf8646696366e427a2a3a0459a3f23309f1"
+          },
+          {
+            "decision": 4,
+            "action": 2,
+            "observation_sha256": "27ad56adaeed03cd380cb9d2c5d2cc8faf5e46aa3006985dd8f55a8f5cfc5907"
+          },
+          {
+            "decision": 5,
+            "action": 2,
+            "observation_sha256": "f9c921e55dcc62cd2741372aa3d618c484aba8352c2efb9b03f7a6b56407623b"
+          },
+          {
+            "decision": 6,
+            "action": 2,
+            "observation_sha256": "1be6a1bf58361f3fd986d95769dcdbd783b0a7c3bab150e30e53f0fc241f2f93"
+          },
+          {
+            "decision": 7,
+            "action": 2,
+            "observation_sha256": "8cc71d406d1dc0fe7f7e8a0d9f2675b09a09f13e683854e779ea217b5bdaef43"
+          },
+          {
+            "decision": 8,
+            "action": 2,
+            "observation_sha256": "f6f060fae684a68b4e780ae79d74a5ad6d2dff02f27ad28c4ccba3de37e3976d"
+          },
+          {
+            "decision": 9,
+            "action": 2,
+            "observation_sha256": "d4824ac460e91ee4f83722bf7423d562b9c7d20e9d6277cfbdfdc654b895e48f"
+          },
+          {
+            "decision": 10,
+            "action": 2,
+            "observation_sha256": "d764985d205cf2591b1369ffd7cbe5505a17103e77c64eb6c48a450129e427dc"
+          },
+          {
+            "decision": 11,
+            "action": 2,
+            "observation_sha256": "b00e29bf20f0e859ff40350f379fb482e867206d6af17fd0d6d7bc5470b993e4"
+          },
+          {
+            "decision": 12,
+            "action": 2,
+            "observation_sha256": "8cc71d406d1dc0fe7f7e8a0d9f2675b09a09f13e683854e779ea217b5bdaef43"
+          },
+          {
+            "decision": 13,
+            "action": 2,
+            "observation_sha256": "f6f060fae684a68b4e780ae79d74a5ad6d2dff02f27ad28c4ccba3de37e3976d"
+          },
+          {
+            "decision": 14,
+            "action": 2,
+            "observation_sha256": "d4824ac460e91ee4f83722bf7423d562b9c7d20e9d6277cfbdfdc654b895e48f"
+          },
+          {
+            "decision": 15,
+            "action": 2,
+            "observation_sha256": "d764985d205cf2591b1369ffd7cbe5505a17103e77c64eb6c48a450129e427dc"
+          },
+          {
+            "decision": 16,
+            "action": 2,
+            "observation_sha256": "11e294d6c926ba26f18b76852cdc956fc9042e2c1ca8e1f5e32bbcbf71ffbcdf"
+          },
+          {
+            "decision": 17,
+            "action": 2,
+            "observation_sha256": "8cc71d406d1dc0fe7f7e8a0d9f2675b09a09f13e683854e779ea217b5bdaef43"
+          },
+          {
+            "decision": 18,
+            "action": 2,
+            "observation_sha256": "f6f060fae684a68b4e780ae79d74a5ad6d2dff02f27ad28c4ccba3de37e3976d"
+          },
+          {
+            "decision": 19,
+            "action": 2,
+            "observation_sha256": "d4824ac460e91ee4f83722bf7423d562b9c7d20e9d6277cfbdfdc654b895e48f"
+          },
+          {
+            "decision": 20,
+            "action": 2,
+            "observation_sha256": "d764985d205cf2591b1369ffd7cbe5505a17103e77c64eb6c48a450129e427dc"
+          },
+          {
+            "decision": 21,
+            "action": 2,
+            "observation_sha256": "11e294d6c926ba26f18b76852cdc956fc9042e2c1ca8e1f5e32bbcbf71ffbcdf"
+          },
+          {
+            "decision": 22,
+            "action": 2,
+            "observation_sha256": "f859c63a489051fdc962814c577d3a2cc4bd3864f2e508a61df6299c65445b8e"
+          },
+          {
+            "decision": 23,
+            "action": 2,
+            "observation_sha256": "216d88dc946027b85a654b080fe988f9c1d094aa8722cc094b91a413bf47148b"
+          },
+          {
+            "decision": 24,
+            "action": 2,
+            "observation_sha256": "8ccf812e49b5b908956af7bc7e028aa60c42531b872b4be23bbb50ad2a2f0d22"
+          },
+          {
+            "decision": 25,
+            "action": 2,
+            "observation_sha256": "bfca2a4ea4a3f3734f9e82066826900dbf85a986c9a7f05872e6d626ccbe0a16"
+          },
+          {
+            "decision": 26,
+            "action": 2,
+            "observation_sha256": "ec62d56fd70801e5e62f7e84e4541ec05afe76256cea22914994a522002c8097"
+          },
+          {
+            "decision": 27,
+            "action": 2,
+            "observation_sha256": "dc5f917521f93fe629897ba337e04a381e78bdd21048062b493eadc1f60b75c8"
+          },
+          {
+            "decision": 28,
+            "action": 2,
+            "observation_sha256": "83d7b20adb3b110d039dd3e8f3118ac8a75aa37343540acc27129ed193348194"
+          },
+          {
+            "decision": 29,
+            "action": 2,
+            "observation_sha256": "23fe2868691d96dd5c3954ce18e25374d6b9516f7388f82855cd9f891ac66c48"
+          },
+          {
+            "decision": 30,
+            "action": 2,
+            "observation_sha256": "2e1910b0a2c7686a34e08237db4a8121dabd2e48ecabb117f734ed9ed2758ecb"
+          }
+        ]
+      }
+    ],
+    "run": {
+      "schema": "terrabot-run-v1",
+      "id": "tw-39040275408-1",
+      "created_at": "2026-10-17T14:20:57.216966+00:00",
+      "code": {
+        "version": "3A19 - Replay diagnostico CNN 3A3 no mundo corrigido",
+        "commit": "52fc5bf5c16ebc1d6b3c79498e10395f4e8f55d1",
+        "dirty": false,
+        "source_sha256": null
+      },
+      "model": {
+        "format": "terrabot-training-world-ddqn-v1",
+        "sha256": "0104c97d2d66989a2ac508958a9a0455f458e39c934c9c4f065e19f47ff265a6"
+      },
+      "config": {
+        "mode": "inference",
+        "task_id": 1,
+        "frames_per_step": 3,
+        "max_decisions": 60,
+        "evaluation_episodes": 2,
+        "holdout_seeds": [
+          1801260401,
+          1801260402
+        ]
+      },
+      "goal_criterion": "flag-contact-v1",
+      "episodes": {
+        "training": {
+          "completed": 0,
+          "wins": 0,
+          "losses": 0,
+          "endings": {
+            "win": 0,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 0,
+            "other": 0
+          }
+        },
+        "evaluation": {
+          "completed": 2,
+          "wins": 2,
+          "losses": 0,
+          "endings": {
+            "win": 2,
+            "death": 0,
+            "timeout": 0,
+            "decision_limit": 0,
+            "other": 0
+          }
+        }
+      },
+      "stages": {
+        "training": {
+          "state": "skipped",
+          "code": "FrozenInference"
+        },
+        "evaluation": {
+          "state": "succeeded",
+          "code": null
+        },
+        "recording": {
+          "state": "succeeded",
+          "code": null
+        },
+        "publication": {
+          "state": "submitted",
+          "code": null
+        }
+      },
+      "errors": [
+        {
+          "phase": "training",
+          "code": "FrozenInference"
+        }
+      ]
+    }
+  },
+  {
     "id": "tw-39024979013-2315-decay",
     "label": "Terrabot 3A14 - exploração normal · tw-39024979013-2315-decay",
     "metrics": {
