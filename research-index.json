@@ -3,6 +3,19 @@
   "description": "Índice público curado de etapas. Resultados privados não são publicados; disponibilidade de GIF depende de manifesto verificado.",
   "entries": [
     {
+      "stage": "3A19",
+      "kind": "publicacao",
+      "title": "Stage 3A19 frozen visual evaluation replay (no training)",
+      "occurred_at": "2026-10-17T14:19:48Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [
+        "tw-39040275408-1"
+      ],
+      "replay_note": "Replays de avaliação congelada com duas visões; não mostram atualizações de pesos.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39040275408"
+    },
+    {
       "stage": "3A17",
       "kind": "validacao",
       "title": "Corredor e bandeira do Nível 1",
