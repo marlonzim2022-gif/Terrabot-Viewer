@@ -330,7 +330,13 @@ function renderResearchHistory() {
         });
       }
     }
-    meta.textContent = kind + date + " · " + (entry.playable.length ? "Replay disponível" : "Sem replay público");
+    const runStatus = ({
+      concluido: "Execução concluída",
+      falhou: "Execução falhou",
+      interrompido: "Execução interrompida"
+    })[entry.status] || "Estado da execução não informado";
+    meta.textContent = kind + date + " · " + runStatus + " · " +
+      (entry.playable.length ? "Replay disponível" : "Sem replay público");
     const detail = document.createElement("p");
     detail.textContent = entry.summary;
     article.append(heading, meta, detail);

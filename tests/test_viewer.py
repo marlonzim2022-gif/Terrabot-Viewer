@@ -178,6 +178,14 @@ class ViewerTests(unittest.TestCase):
         self.assertEqual(link.count(),1)
         self.assertIn('experiment=tw-local-test',link.first.get_attribute('href'))
 
+    def test_research_history_shows_workflow_failure_not_agent_loss(self):
+        self.research_data['entries'][0]['status']='falhou'
+        self.load()
+        self.page.locator('#research-list .research-entry').first.wait_for(state='attached')
+        self.assertIn('Execução falhou',self.page.locator('#research-list').inner_text())
+        self.assertIn('Sem replay público',self.page.locator('#research-list').inner_text())
+        self.assertFalse(self.page.evaluate('document.documentElement.scrollWidth > innerWidth'))
+
     def test_research_index_failure_preserves_replay_catalog(self):
         self.research_failure=True
         self.load()
