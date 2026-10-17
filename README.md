@@ -1,5 +1,8 @@
 # Terrabot Viewer
 
+> **Regra permanente para outros chats e assistentes:** ao criar uma arquitetura nova do Terrabot, integrá-la **antes de treinar** ao gravador existente `DualViewRecorder` do Training World Studio e à publicação automática de replays reais com visão do jogo e visão RGB da IA. Consulte o [AGENTS.md deste repositório](AGENTS.md) e as [instruções centrais do Studio](https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/blob/main/AGENTS.md). O padrão V5–V8 de quatro vídeos representativos deve ser preservado sempre que existirem os episódios.
+
+
 ## Histórico dos experimentos: observação antes de alterar o agente
 
 O catálogo de replays `manifest.json` continua sendo a fonte para a mídia realmente
