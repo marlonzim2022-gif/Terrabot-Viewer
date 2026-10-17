@@ -3,6 +3,43 @@
   "description": "Índice público curado de etapas. Resultados privados não são publicados; disponibilidade de GIF depende de manifesto verificado.",
   "entries": [
     {
+      "stage": "3A24",
+      "kind": "auditoria",
+      "title": "Stage 3A24 physics-only terrain audit",
+      "occurred_at": "2026-10-17T17:38:31Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público validado nesta execução. Nenhum vídeo da IA foi inventado.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39054645763"
+    },
+    {
+      "stage": "3A23",
+      "kind": "publicacao",
+      "title": "Stage 3A23 frozen CNN versus constant-control real Viewer gameplay",
+      "occurred_at": "2026-10-17T17:05:36Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [
+        "tw-39052237821-1"
+      ],
+      "replay_note": "Replays de avaliação congelada com duas visões; não mostram atualizações de pesos.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39052237821"
+    },
+    {
+      "stage": "3A22",
+      "kind": "avaliacao",
+      "title": "Stage 3A22 frozen 3A20 CNN evaluation with real Viewer replays (no training)",
+      "occurred_at": "2026-10-17T16:39:35Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [
+        "tw-39050368998-1"
+      ],
+      "replay_note": "Replays de avaliação congelada com duas visões; não mostram atualizações de pesos.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39050368998"
+    },
+    {
       "stage": "3A20",
       "kind": "treino",
       "title": "Stage 3A20 bounded training and four real Viewer replays",
