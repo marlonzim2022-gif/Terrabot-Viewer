@@ -3,6 +3,19 @@
   "description": "Índice público curado de etapas. Resultados privados não são publicados; disponibilidade de GIF depende de manifesto verificado.",
   "entries": [
     {
+      "stage": "3A26",
+      "kind": "treino",
+      "title": "Stage 3A26 continue authentic Level 2 CNN training with four real Viewer replays",
+      "occurred_at": "2026-10-17T19:14:26Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [
+        "tw-39061592068-1"
+      ],
+      "replay_note": "Replays de avaliação congelada com duas visões; não mostram atualizações de pesos.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39061592068"
+    },
+    {
       "stage": "3A25",
       "kind": "treino",
       "title": "Stage 3A25 first Level 2 vision DQN training and four real Viewer replays",
