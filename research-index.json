@@ -1,0 +1,179 @@
+{
+  "schema": "terrabot-research-history-v1",
+  "description": "Índice público curado de etapas. Resultados privados não são publicados; disponibilidade de GIF depende de manifesto verificado.",
+  "entries": [
+    {
+      "stage": "3A17",
+      "kind": "validacao",
+      "title": "Corredor e bandeira do Nível 1",
+      "occurred_at": "2026-10-17T12:52:54Z",
+      "status": "concluido",
+      "summary": "Validação de travessia física e testes do cenário. Não é um episódio de aprendizado.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39034288628"
+    },
+    {
+      "stage": "3A16",
+      "kind": "auditoria",
+      "title": "Acessibilidade da bandeira e obstáculos",
+      "occurred_at": "2026-10-17T11:07:15Z",
+      "status": "concluido",
+      "summary": "Investigação de mapas e contato físico; resultados indeterminados não significam impossibilidade.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39027479418"
+    },
+    {
+      "stage": "3A15",
+      "kind": "publicacao",
+      "title": "Publicação das avaliações congeladas 3A14",
+      "occurred_at": "2026-10-17T10:47:25Z",
+      "status": "concluido",
+      "summary": "Etapa de gravação e publicação, não um novo treinamento.",
+      "replay_ids": [
+        "tw-39024979013-2315-decay",
+        "tw-39024979013-2315-mean-adaptive"
+      ],
+      "replay_note": "Estas gravações correspondem aos dois modelos da 3A14.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39026234247"
+    },
+    {
+      "stage": "3A14",
+      "kind": "treino",
+      "title": "Replicação independente de exploração RGB",
+      "occurred_at": "2026-10-17T10:27:44Z",
+      "status": "concluido",
+      "summary": "Modelos treinados em experimento privado; replays públicos da avaliação congelada, incluindo falhas.",
+      "replay_ids": [
+        "tw-39024979013-2315-decay",
+        "tw-39024979013-2315-mean-adaptive"
+      ],
+      "replay_note": "Replays de avaliação congelada; não são vídeos do treinamento contínuo.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39024979013"
+    },
+    {
+      "stage": "3A13",
+      "kind": "treino",
+      "title": "A/B de exploração por média RGB",
+      "occurred_at": "2026-10-17T10:05:15Z",
+      "status": "concluido",
+      "summary": "Treinamento comparativo privado; não foi publicado replay aprovado no Viewer.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39023560344"
+    },
+    {
+      "stage": "3A12",
+      "kind": "auditoria",
+      "title": "Intervenções visuais na política congelada",
+      "occurred_at": "2026-10-17T09:39:24Z",
+      "status": "concluido",
+      "summary": "Auditoria de respostas aos estímulos visuais, sem treinamento novo.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39021953296"
+    },
+    {
+      "stage": "3A11",
+      "kind": "treino",
+      "title": "A/B de exploração visual",
+      "occurred_at": "2026-10-17T08:57:55Z",
+      "status": "concluido",
+      "summary": "Treinamento comparativo privado com avaliação separada.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39019323902"
+    },
+    {
+      "stage": "3A10",
+      "kind": "auditoria",
+      "title": "Auditoria de exploração e recompensa",
+      "occurred_at": "2026-10-17T08:42:48Z",
+      "status": "concluido",
+      "summary": "Medição técnica de exploração e recompensas, sem afirmar progresso na tarefa.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39018394294"
+    },
+    {
+      "stage": "3A9",
+      "kind": "auditoria",
+      "title": "Progresso horizontal com modelos congelados",
+      "occurred_at": "2026-10-17T08:02:03Z",
+      "status": "concluido",
+      "summary": "Medição de deslocamento sem treinamento.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39015843752"
+    },
+    {
+      "stage": "3A8",
+      "kind": "treino",
+      "title": "Replicação A/B com memória temporal",
+      "occurred_at": "2026-10-17T07:41:52Z",
+      "status": "concluido",
+      "summary": "Comparação privada de políticas temporais em mapas de avaliação.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39014595685"
+    },
+    {
+      "stage": "3A7",
+      "kind": "treino",
+      "title": "Teste isolado de memória temporal A/B",
+      "occurred_at": "2026-10-17T07:25:23Z",
+      "status": "concluido",
+      "summary": "Teste experimental curto e privado, não uma publicação de replay.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39013571296"
+    },
+    {
+      "stage": "3A6",
+      "kind": "auditoria",
+      "title": "Percepção de imobilidade por RGB",
+      "occurred_at": "2026-10-17T07:07:03Z",
+      "status": "concluido",
+      "summary": "Auditoria do movimento com rede congelada.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39012432052"
+    },
+    {
+      "stage": "3A5",
+      "kind": "auditoria",
+      "title": "Sondagem física e de movimento",
+      "occurred_at": "2026-10-17T06:51:20Z",
+      "status": "concluido",
+      "summary": "Diagnóstico privado da física e do movimento, sem treinamento.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39011447396"
+    },
+    {
+      "stage": "3A4",
+      "kind": "auditoria",
+      "title": "Sondagem congelada de movimento",
+      "occurred_at": "2026-10-16T21:18:07Z",
+      "status": "concluido",
+      "summary": "Medição privada de movimento sem atualizar a rede.",
+      "replay_ids": [],
+      "replay_note": "Sem replay público aprovado para esta etapa.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/38968406108"
+    },
+    {
+      "stage": "3A3",
+      "kind": "avaliacao",
+      "title": "Piloto visual do Nível 1",
+      "occurred_at": "2026-10-16T20:44:40Z",
+      "status": "concluido",
+      "summary": "Avaliação com replay do jogo e da visão RGB.",
+      "replay_ids": [
+        "tw-38964437676-1"
+      ],
+      "replay_note": "Replay de avaliação; não prova aprendizado geral.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/38964437676"
+    }
+  ]
+}

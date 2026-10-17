@@ -1,1 +1,14 @@
 .actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.actions button,.actions a{font:inherit;padding:12px;border:1px solid #71d8c7;border-radius:10px;background:#1d3044;color:#a1f0df;min-height:44px}.actions a{text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #f9cb70;outline-offset:3px}#catalog-status:empty{display:none}#execution-status{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.stage-status{border:1px solid #466079;border-radius:10px;padding:10px;overflow-wrap:anywhere}.stage-status[data-state=failed],.stage-status[data-state=interrupted],.stage-status[data-state=blocked_token]{border-color:#ef9d8f;color:#ffbcad}#run-summary,#comparison{overflow-wrap:anywhere}#compare{width:100%;margin:10px 0}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.85rem}td,th{padding:10px 5px;border-bottom:1px solid #466079;text-align:left;vertical-align:top;overflow-wrap:anywhere}caption{text-align:left;color:#f9cb70;padding:12px 0}.panel p[role=status]{color:#f9cb70}@media(max-width:420px){.panel{padding:13px}.stage{min-height:180px}.controls{grid-template-columns:1fr;gap:7px}.metrics{grid-template-columns:1fr}.wrap{padding:16px 12px 40px}}
+
+.research-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0}
+.research-controls select{flex:1;min-width:170px}
+#research-status{font-size:.86rem}
+.research-list{display:grid;gap:12px;max-height:620px;overflow-y:auto;overscroll-behavior:contain;padding:2px}
+.research-entry{background:#1b3045;border:1px solid #3e586e;border-radius:12px;padding:14px;min-width:0}
+.research-entry h3{font-size:1rem;line-height:1.35;margin:0 0 6px;overflow-wrap:anywhere}
+.research-entry p{font-size:.86rem;margin:8px 0}
+.research-meta{color:#83dac9}
+.research-note{color:#b6c5d5}
+.research-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.research-links a{color:#a1f0df;font-size:.86rem;min-height:44px;display:inline-flex;align-items:center;overflow-wrap:anywhere}
+@media(max-width:480px){.research-list{max-height:520px}.research-controls{align-items:stretch;flex-direction:column}.research-controls select{width:100%}}

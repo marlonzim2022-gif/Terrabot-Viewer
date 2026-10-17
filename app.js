@@ -16,6 +16,19 @@ let manifest = [];
 let activeBlobUrl = null;
 let loadGeneration = 0;
 let catalogGeneration = 0;
+const researchFilter = document.getElementById("research-filter");
+const researchList = document.getElementById("research-list");
+const researchStatus = document.getElementById("research-status");
+let researchEntries = [];
+let researchIndexError = false;
+
+const researchKinds = {
+  treino: "Treinamento / avaliação",
+  avaliacao: "Avaliação",
+  auditoria: "Auditoria técnica",
+  validacao: "Validação do ambiente",
+  publicacao: "Publicação de gravações"
+};
 
 const stateLabels = {queued:"Pendente", running:"Em execução", succeeded:"Concluído",
   failed:"Falhou", interrupted:"Interrompido", skipped:"Não executado", missing:"Indisponível",
@@ -254,6 +267,128 @@ function renderVersion(replayId=null, viewId=null) {
   renderReplay();
 }
 
+function researchReplayLink(id) {
+  const url = new URL(location.href);
+  url.search = "";
+  url.searchParams.set("experiment", id);
+  return url.href;
+}
+
+function renderResearchHistory() {
+  researchList.replaceChildren();
+  const publishedIds = new Set();
+  const records = researchEntries.map(entry => {
+    const replays = entry.replay_ids.filter(id => {
+      const version = manifest.find(v => v.id === id);
+      return version && Array.isArray(version.replays) && version.replays.length > 0;
+    });
+    for (const id of replays) publishedIds.add(id);
+    return {...entry, playable: replays};
+  });
+  // Any future approved Viewer publication appears here automatically.
+  for (const item of manifest) {
+    if (publishedIds.has(item.id)) continue;
+    records.push({
+      stage: "",
+      title: item.label,
+      kind: "avaliacao",
+      occurred_at: "",
+      summary: item.evaluation_note || "Registro do catálogo público.",
+      replay_note: "Esta execução não inclui uma gravação pública.",
+      playable: item.replays.length ? [item.id] : []
+    });
+  }
+  const withReplay = records.filter(x => x.playable.length).length;
+  const filter = researchFilter.value;
+  const shown = records.filter(x => filter === "all" ||
+    (filter === "replay" && x.playable.length) ||
+    (filter === "missing" && !x.playable.length));
+  researchStatus.textContent = records.length + " registros: " + withReplay + " com replay público e " +
+    (records.length - withReplay) + " sem replay. " +
+    (researchIndexError ? "O índice de auditorias não pôde ser atualizado; exibindo apenas o catálogo de replays. " : "") +
+    "Resultados privados não são publicados automaticamente.";
+  if (!shown.length) {
+    const message = document.createElement("p");
+    message.textContent = "Nenhum registro corresponde ao filtro.";
+    researchList.append(message);
+    return;
+  }
+  for (const entry of shown) {
+    const article = document.createElement("article");
+    article.className = "research-entry";
+    const heading = document.createElement("h3");
+    heading.textContent = (entry.stage ? entry.stage + " · " : "") + entry.title;
+    const meta = document.createElement("p");
+    meta.className = "research-meta";
+    const kind = researchKinds[entry.kind] || "Registro histórico";
+    let date = "";
+    if (entry.occurred_at) {
+      const timestamp = new Date(entry.occurred_at);
+      if (!Number.isNaN(timestamp.getTime())) {
+        date = " · " + timestamp.toLocaleString("pt-BR", {
+          dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo"
+        });
+      }
+    }
+    meta.textContent = kind + date + " · " + (entry.playable.length ? "Replay disponível" : "Sem replay público");
+    const detail = document.createElement("p");
+    detail.textContent = entry.summary;
+    article.append(heading, meta, detail);
+    const note = document.createElement("p");
+    note.className = "research-note";
+    note.textContent = entry.replay_note || (entry.playable.length ?
+      "Replays de avaliação, não uma transmissão do treinamento." :
+      "Nenhuma gravação pública foi aprovada para esta execução.");
+    article.append(note);
+    const links = document.createElement("div");
+    links.className = "research-links";
+    entry.playable.forEach((id, i) => {
+      const match = manifest.find(v => v.id === id);
+      const link = document.createElement("a");
+      link.href = researchReplayLink(id);
+      link.textContent = entry.playable.length > 1 ? "Assistir replay " + (i + 1) + ": " + match.label : "Assistir no visualizador";
+      links.append(link);
+    });
+    if (/^https:\/\/github\.com\/marlonzim2022-gif\/Terrabot-Training-World-Studio\/actions\/runs\/[0-9]+$/.test(entry.source_url || "")) {
+      const source = document.createElement("a");
+      source.href = entry.source_url;
+      source.target = "_blank";
+      source.rel = "noopener noreferrer";
+      source.textContent = "Registro técnico no GitHub (acesso restrito)";
+      links.append(source);
+    }
+    if (links.childElementCount) article.append(links);
+    researchList.append(article);
+  }
+}
+
+async function loadResearchIndex(generation) {
+  try {
+    const response = await fetch("research-index.json?refresh=" + Date.now(), {
+      cache: "no-store", signal: AbortSignal.timeout(15000)
+    });
+    if (!response.ok) throw Error("Research index unavailable");
+    const payload = await response.json();
+    if (payload?.schema !== "terrabot-research-history-v1" ||
+        !Array.isArray(payload.entries) || payload.entries.length > 80 ||
+        new Set(payload.entries.map(item => item.stage)).size !== payload.entries.length ||
+        payload.entries.some(item => !item || !/^[0-9]A[0-9]+$/.test(item.stage) ||
+          typeof item.title !== "string" || typeof item.summary !== "string" ||
+          !Array.isArray(item.replay_ids) || item.replay_ids.length > 8 ||
+          item.replay_ids.some(id => typeof id !== "string"))) {
+      throw Error("Invalid research history");
+    }
+    if (generation !== catalogGeneration) return;
+    researchEntries = payload.entries;
+    researchIndexError = false;
+  } catch (_) {
+    if (generation !== catalogGeneration) return;
+    researchIndexError = true;
+    researchEntries = [];
+  }
+  renderResearchHistory();
+}
+
 async function loadCatalog() {
   const generation = ++catalogGeneration;
   const previous = new URL(location.href).searchParams;
@@ -286,6 +421,7 @@ async function loadCatalog() {
       catalogStatus.textContent += " O link solicitado não está no catálogo; exibindo uma execução disponível.";
     }
     renderVersion(previous.get("replay"),previous.get("view"));
+    await loadResearchIndex(generation);
   } catch (_) {
     if (generation !== catalogGeneration) return;
     catalogStatus.textContent = "Não foi possível atualizar o catálogo. Confira sua conexão e toque em Atualizar catálogo para tentar novamente.";
@@ -303,4 +439,5 @@ replaySelect.addEventListener("change", () => { renderViews(); renderReplay(); }
 viewSelect.addEventListener("change", renderReplay);
 compareSelect.addEventListener("change", () => { renderComparison(); updateLink(); });
 document.getElementById("refresh").addEventListener("click", loadCatalog);
+researchFilter.addEventListener("change", renderResearchHistory);
 loadCatalog();
