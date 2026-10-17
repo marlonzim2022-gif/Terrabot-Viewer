@@ -52,6 +52,17 @@ class ViewerTests(unittest.TestCase):
 
     def setUp(self):
         self.data=catalog();self.catalog_failure=False;self.media_failure=False
+        self.research_failure=False
+        self.research_data={"schema":"terrabot-research-history-v1","entries":[
+            {"stage":"3A16","kind":"auditoria","title":"Auditoria sem replay",
+             "occurred_at":"2026-10-17T11:07:15Z","status":"concluido",
+             "summary":"Avaliou física, não treinou.","replay_ids":[],
+             "replay_note":"Nenhuma gravação pública aprovada.",
+             "source_url":"https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39027479418"},
+            {"stage":"3A14","kind":"treino","title":"Reprodução visual de modelo congelado",
+             "occurred_at":"2026-10-17T10:27:44Z","status":"concluido",
+             "summary":"Replay de avaliação, não treino.","replay_ids":["tw-local-test"],
+             "replay_note":"Replay real de avaliação.","source_url":""}]}
         self.context=self.browser.new_context(viewport={"width":390,"height":844})
         self.page=self.context.new_page();self.errors=[]
         self.page.on('pageerror',lambda error:self.errors.append(str(error)))
@@ -66,6 +77,9 @@ class ViewerTests(unittest.TestCase):
                 content=GIF[:len(GIF)//2] if path=='ai.part1' else GIF[len(GIF)//2:] if path=='ai.part2' else GIF
                 route.fulfill(content_type='text/plain',body=content)
         self.page.route('**/manifest.json*',manifest)
+        self.page.route('**/research-index.json*',lambda route: route.fulfill(
+            status=503,body='Unavailable') if self.research_failure else route.fulfill(
+            content_type='application/json',body=json.dumps(self.research_data)))
         self.page.route('**/media/**',media)
         self.page.route('**/receipts/**',lambda route:route.fulfill(content_type='application/json',body=json.dumps({
             'schema':'terrabot-publication-proof-v1','id':'tw-local-test','state':'verified',
@@ -148,6 +162,36 @@ class ViewerTests(unittest.TestCase):
         self.load()
         self.page.wait_for_function("document.querySelector('#execution-status').textContent.includes('confirmação final pendente')")
         self.assertEqual(self.page.locator('.stage-status[data-state=verified]').count(),0)
+
+    def test_research_history_explains_missing_replays_and_links_to_real_evaluations(self):
+        self.load()
+        self.page.locator('#research-list .research-entry').first.wait_for(state='attached')
+        self.assertIn('3A16 · Auditoria sem replay',self.page.locator('#research-list').inner_text())
+        self.assertIn('Sem replay público',self.page.locator('#research-list').inner_text())
+        self.assertIn('3A14 · Reprodução visual',self.page.locator('#research-list').inner_text())
+        self.page.select_option('#research-filter','missing')
+        self.assertEqual(self.page.locator('#research-list .research-entry').count(),1)
+        self.assertIn('3A16',self.page.locator('#research-list').inner_text())
+        self.page.select_option('#research-filter','replay')
+        self.assertEqual(self.page.locator('#research-list .research-entry').count(),2)
+        link=self.page.locator('#research-list a[href*="experiment=tw-local-test"]')
+        self.assertEqual(link.count(),1)
+        self.assertIn('experiment=tw-local-test',link.first.get_attribute('href'))
+
+    def test_research_index_failure_preserves_replay_catalog(self):
+        self.research_failure=True
+        self.load()
+        self.page.wait_for_function("document.querySelector('#research-status').textContent.includes('não pôde ser atualizado')")
+        self.assertEqual(self.page.locator('#research-list .research-entry').count(),2)
+        self.assertTrue(self.page.locator('#research-list a[href*="experiment=v9"]').count())
+        self.assertTrue(self.page.locator('#video').is_visible())
+
+    def test_research_history_escapes_untrusted_labels_on_mobile(self):
+        self.research_data['entries'][0]['title']='<img src=x onerror="window.bad=1">'
+        self.load()
+        self.page.locator('#research-list .research-entry').first.wait_for(state='attached')
+        self.assertFalse(self.page.evaluate('Boolean(window.bad)'))
+        self.assertFalse(self.page.evaluate('document.documentElement.scrollWidth > innerWidth'))
 
 
 if __name__=='__main__': unittest.main()
