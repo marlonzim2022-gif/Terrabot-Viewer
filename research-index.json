@@ -3,15 +3,28 @@
   "description": "Índice público curado de etapas. Resultados privados não são publicados; disponibilidade de GIF depende de manifesto verificado.",
   "entries": [
     {
+      "stage": "3A25",
+      "kind": "treino",
+      "title": "Stage 3A25 first Level 2 vision DQN training and four real Viewer replays",
+      "occurred_at": "2026-10-17T18:22:54Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [
+        "tw-39057832405-1"
+      ],
+      "replay_note": "Replays de avaliação congelada com duas visões; não mostram atualizações de pesos.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39057832405"
+    },
+    {
       "stage": "3A24",
       "kind": "auditoria",
       "title": "Stage 3A24 physics-only terrain audit",
-      "occurred_at": "2026-10-17T17:38:31Z",
+      "occurred_at": "2026-10-17T18:06:03Z",
       "status": "concluido",
       "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
       "replay_ids": [],
       "replay_note": "Sem replay público validado nesta execução. Nenhum vídeo da IA foi inventado.",
-      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39054645763"
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39056618396"
     },
     {
       "stage": "3A23",
