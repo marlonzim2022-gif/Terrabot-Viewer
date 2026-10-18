@@ -3,6 +3,20 @@
   "description": "Índice público curado de etapas. Resultados privados não são publicados; disponibilidade de GIF depende de manifesto verificado.",
   "entries": [
     {
+      "stage": "3A29",
+      "kind": "avaliacao",
+      "title": "Stage 3A29 matched epsilon-reset versus carry-floor (real dual-view Level 2)",
+      "occurred_at": "2026-10-18T10:46:02Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [
+        "tw-39120546775-1-carry-floor",
+        "tw-39120546775-1-restart"
+      ],
+      "replay_note": "Replays de avaliação congelada com duas visões; não mostram atualizações de pesos.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39120546775"
+    },
+    {
       "stage": "3A28",
       "kind": "avaliacao",
       "title": "Stage 3A28 offline Q diagnostics",
