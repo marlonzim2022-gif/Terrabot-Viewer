@@ -3,6 +3,21 @@
   "description": "Índice público curado de etapas. Resultados privados não são publicados; disponibilidade de GIF depende de manifesto verificado.",
   "entries": [
     {
+      "stage": "3A33",
+      "kind": "auditoria",
+      "title": "Stage 3A33 expanded corner and obstacle visual audit",
+      "occurred_at": "2026-10-18T16:24:42Z",
+      "status": "concluido",
+      "summary": "Workflow success. O status da execução não comprova vitória, aprendizado ou interpretação visual.",
+      "replay_ids": [
+        "tw-39144870462-1-3a33-audit-3",
+        "tw-39144870462-1-3a33-audit-2",
+        "tw-39144870462-1-3a33-audit-1"
+      ],
+      "replay_note": "Replays de avaliação congelada com duas visões; não mostram atualizações de pesos.",
+      "source_url": "https://github.com/marlonzim2022-gif/Terrabot-Training-World-Studio/actions/runs/39144870462"
+    },
+    {
       "stage": "3A29",
       "kind": "avaliacao",
       "title": "Stage 3A29 matched epsilon-reset versus carry-floor (real dual-view Level 2)",
